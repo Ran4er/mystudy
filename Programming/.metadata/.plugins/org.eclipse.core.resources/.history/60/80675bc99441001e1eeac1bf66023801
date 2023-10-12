@@ -1,0 +1,35 @@
+import java.util.Random;
+import java.lang.Math;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		long[] d = new long[9];
+		float[] x = new float[14];
+		float[][] c = new float[9][14];
+		
+		for(int i = 0; i<9; i++) {
+			d[i] = (long)(20-2*i);
+		}
+		
+		for(int i =0; i<14; i++ ) {
+			x[i] = (float) Math.random()*(6F-(-7F)) + (-7F);		
+		}
+		
+		for(int i = 0; i<9; i++) {
+			for(int j = 0; j<14; j++) {
+				if(d[i] == 10) {
+					c[i][j] = (float) Math.pow(Math.PI * (Math.atan(Math.cos(x[j]))+3),2);
+				}
+				else if(d[i] == 4 || d[i] == 8 || d[i] == 14 || d[i] == 20) {
+					c[i][j] = (float) Math.atan(Math.pow(Math.sin(x[j]), 2));
+				}
+				else {
+					c[i][j] = (float) Math.asin(Math.cos(Math.tan(Math.pow(Math.E, x[j]))) - 1);
+				}
+				System.out.print(String.format("%.2f", c[i][j]));
+			}
+			System.out.println("\n");
+		}
+	}
+}

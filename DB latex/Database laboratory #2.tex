@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+%For sql code
+\usepackage{listings}
+%Import geometry for smaller top
+\usepackage{geometry}
+% Required for inserting images
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+%Header and footer
+\usepackage{fancyhdr}
+%Language setting
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{language=SQL,
+  basicstyle={\small\ttfamily},
+  belowskip=3mm,
+  breakatwhitespace=true,
+  breaklines=true,
+  classoffset=0,
+  columns=flexible,
+  commentstyle=\color{dkgreen},
+  framexleftmargin=0.25em,
+  frameshape={}{yy}{}{}, %To remove to vertical lines on left, set `frameshape={}{}{}{}`
+  keywordstyle=\color{blue},
+  numbers=none, %If you want line numbers, set `numbers=left`
+  numberstyle=\tiny\color{gray},
+  showstringspaces=false,
+  stringstyle=\color{mauve},
+  tabsize=3,
+  xleftmargin =1em
+}
+
+\geometry{a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=30mm,
+ bottom=25mm,
+ }
+
+\fancypagestyle{first style}
+{
+\chead{\footnotesize{Санкт-Петербургский Национальный Исследовательский Университет ИТМО\\Факультет Программной Инженерии и Компьютерной Техники}}
+\cfoot{\footnotesize{Санкт-Петербург 2023г.}}
+\renewcommand{\headrulewidth}{0pt}
+}
+
+\begin{document}
+
+\pagestyle{fancy}
+$\thispagestyle{first style}$
+
+\centering{\includegraphics[scale=0.5]{LogoITMO}}
+
+\vspace{25mm}
+
+\centering{Вариант №1537\\Лабораторная работа№2\\По дисциплине\\Базы Данных}
+
+\vspace{50mm}
+
+\begin{flushright}
+Выполнил студент группы P3115:\\Хромов Даниил Тимофеевич\\
+\vspace{5mm}
+Преподаватель:\\Горбунов Михаил Витальевич\\Николаев Владимир Вячеславович
+\end{flushright}
+
+\newpage
+
+\pagestyle{empty}
+\flushleft{\large{\textbf{1. Текст Задания}}}\\
+По варианту, выданному преподавателем, составить и выполнить запросы к базе данных "Учебный процесс".\\\vspace{5mm}
+Составить запросы на языке SQL (пункты 1-7).
+
+Сделать запрос для получения атрибутов из указанных таблиц, применив фильтры по указанным условиям:\\
+1. Н\_ТИПЫ\_ВЕДОМОСТЕЙ, Н\_ВЕДОМОСТИ.\\
+Вывести атрибуты: Н\_ТИПЫ\_ВЕДОМОСТЕЙ.ИД, Н\_ВЕДОМОСТИ.ДАТА.\\
+Фильтры (AND):\\
+a) Н\_ТИПЫ\_ВЕДОМОСТЕЙ.НАИМЕНОВАНИЕ < Ведомость.\\
+b) Н\_ВЕДОМОСТИ.ЧЛВК\_ИД = 163249.\\
+Вид соединения: RIGHT JOIN.\\
+2. Сделать запрос для получения атрибутов из указанных таблиц, применив фильтры по указанным условиям:\\
+Таблицы: Н\_ЛЮДИ, Н\_ОБУЧЕНИЯ, Н\_УЧЕНИКИ.\\
+Вывести атрибуты: Н\_ЛЮДИ.ИМЯ, Н\_ОБУЧЕНИЯ.НЗК, Н\_УЧЕНИКИ.ГРУППА.\\
+Фильтры: (AND)\\
+a) Н\_ЛЮДИ.ФАМИЛИЯ < Ёлкин.\\
+b) Н\_ОБУЧЕНИЯ.НЗК = 001000.\\
+c) Н\_УЧЕНИКИ.ИД = 150308.\\
+Вид соединения: RIGHT JOIN.\\
+3.Вывести число фамилий и отчеств без учета повторений.\\
+При составлении запроса нельзя использовать DISTINCT.\\
+4. Найти группы, в которых в 2011 году было ровно 5 обучающихся студентов на ФКТИУ.\\
+Для реализации использовать соединение таблиц.\\
+5. Выведите таблицу со средним возрастом студентов во всех группах (Группа, Средний возраст), где средний возраст равен максимальному возрасту в группе 1100.\\
+6. Получить список студентов, зачисленных ровно первого сентября 2012 года на первый курс очной или заочной формы обучения. В результат включить:\\
+номер группы;\\
+номер, фамилию, имя и отчество студента;\\
+номер и состояние пункта приказа;\\
+Для реализации использовать соединение таблиц.\\
+7. Вывести список студентов, имеющих одинаковые имена, но не совпадающие даты рождения.\\
+\vspace{5mm}
+\flushleft{\large{\textbf{2. Реализация запросов на SQL}}}\\
+\lstinputlisting[language=SQL]{code/lab2.sql}
+
+\flushleft{\large{\textbf{3. Вывод}}}\\
+При выполнении лабораторной работы я познакомился с основными функциями языка SQL и диалекта PostgreSQL. Научился писать запросы, получать, агрегировать, отсеивать и сортировать полученные данные с использованием различны синтаксических конструкций языка. В результате был освоен язык DML SQL, предназначенный для работы с данными, хранящимися внутри базы данных.
+
+\end{document}
