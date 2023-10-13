@@ -4,16 +4,9 @@
 #include<inttypes.h>
 
 //Считывание эл. массива
-int64_t read_int64(){
-    
-    return 
-}
+int64_t read_int64(){}
 //Считывание размера массива
-size_t read_size(){
-    char num[] = "";
-    scanf("%s", num);
-    return (size_t) num[0];
-}
+size_t read_size(){}
 
 // заполнить уже выделенный массив array размера size числами
 // числа нужно считывать из потока ввода
@@ -32,5 +25,5 @@ int64_t* array_int_read( size_t* size ) {
 }
 
 int main(){
-    array_int_read(read_size);
+    array_int_read(read_size());
 }
