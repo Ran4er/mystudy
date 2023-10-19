@@ -1,37 +1,197 @@
+
 <!DOCTYPE html>
-<html lang="RU">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Хромов Даниил Тимофеевич">
-        <meta name="description" content="Веб-программирование: Лабораторная работа№1">
-        <link rel="icon" type="image/jpg" href="images/favlogo.jpg">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext">
-        <link rel="stylesheet" href="stylesheets/style.css">
-        <link rel="icon" href="images/logocube.png">
-        <title>Лабораторная работа №1 Web Programming</title>
-        <script src="scripts/script.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Хромов Даниил Тимофеевич">
+    <meta name="description" content="Веб-программирование: Лабораторная работа№1">
+    <link rel="icon" href="assets/images/logocube.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>WBP #1</title>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
 
-    <body style="background-color: brown;">
-        <header class="header">
-            <div class="header_logo">
-                <a href="https://github.com/Ran4er">
-                    <img class="" src="images/logocube.png" alt="Ru6ik.co" title="Перейти на сайт создателя">
-                </a>
-            </div>
-        </header>
 
-        <div class="intro">
-            <div class="container">
-                <div class="intro_inner">
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">Ru6ik</div>
 
-                    <h2 class="intro_suptitle">Ru6ik.co present</h2>
-                    <h1 class="intro_title">Web lab #1</h1>
-
-                </div>
-            </div>
+            <nav class="nav">
+                <a class="nav__link active" href="#">Main</a>
+                <a class="nav__link" href="#">Laba</a>
+                <a class="nav__link" href="#">Contact</a>
+            </nav>
         </div>
-    </body>
+    </div>
+</header>
 
+
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h2 class="intro__suptitle">Ru6ik.co present</h2>
+            <h1 class="intro__title">Web Lab</h1>
+        </div>
+    </div>
+
+
+</div>
+<!--main block lab-->
+<section class="section">
+    <div class="container">
+        <table class="main__table">
+
+          <thead>
+            <h3 style="text-align: center">Выбор значений</h3>
+          </thead>
+
+          <hr>
+
+          <tbody>
+
+            <tr>
+                <td rowspan="3">Выберете X: </td>
+                <td>-5<input name="X-checkbox-group" class="checkbox_animation" value="-5" type="checkbox"></td>
+                <td>-4<input name="X-checkbox-group" class="checkbox_animation" value="-4" type="checkbox"></td>
+                <td>-3<input name="X-checkbox-group" class="checkbox_animation" value="-3" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>-2<input name="X-checkbox-group" class="checkbox_animation" value="-2" type="checkbox"></td>
+                <td>-1<input name="X-checkbox-group" class="checkbox_animation" value="-1" type="checkbox"></td>
+                <td>0<input name="X-checkbox-group" class="checkbox_animation" value="0" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>1<input name="X-checkbox-group" class="checkbox_animation" value="1" type="checkbox"></td>
+                <td>2<input name="X-checkbox-group" class="checkbox_animation" value="2" type="checkbox"></td>
+                <td>3<input name="X-checkbox-group" class="checkbox_animation" value="3" type="checkbox"></td>
+            </tr>
+
+            <tr>
+                <td>Введите Y: </td>
+                <td colspan="3"><input required name="Y-input" class="input_animation" type="text" placeholder="от -5 до 3" maxlength="6"></td>
+
+                <td rowspan="6">
+
+                    <svg xmlns="https://w3.org/2000/svg">
+                        
+                    </svg>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Введите R: </td>
+                <td colspan="3"><input required name="R-input" class="input_animation" type="text" placeholder="от 2 до 5" maxlength="6"></td>
+            </tr>
+
+          </tbody>
+
+          <tfoot>
+            <tr>
+                <td colspan="5" id="outputContainer">
+                    <h4>
+                        <span class="outputStub notification">Нет результатов</span>
+                    </h4>
+                </td>
+            </tr>
+          </tfoot>
+
+        </table>
+    </div>
+</section>
+
+
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__col  footer__col--first">
+                <div class="footer__logo">Ru6ik</div>
+                <div class="footer__text">Данный проект был разработан Хромовым Даниилом Тимофеевичем из группы P3215. Этот сайт является частью нескольких работ по Веб-программированию.</div>
+
+                <div class="footer__social">
+                    <div class="footer__social-header">
+                        <b>373342</b> edition
+                    </div>
+                </div>
+            </div><!-- /.footer__col -->
+
+            <div class="footer__col  footer__col--second">
+                <div class="footer__title">Contact</div>
+
+                <div class="blogs">
+                    <div class="blogs__item">
+                        <img class="blogs__img" src="assets/images/contact/1.jpg" alt="">
+                        <div class="blogs__content">
+                            <a class="blogs__title" href="https://go.2gis.com/gm0j4">Отделение на Кронверском</a>
+                            <div class="blogs__date">Jan 9, 1912</div>
+                        </div>
+                    </div>
+
+                    <div class="blogs__item">
+                        <img class="blogs__img" src="assets/images/contact/2.jpg" alt="">
+                        <div class="blogs__content">
+                            <a class="blogs__title" href="https://go.2gis.com/f8ewt">Отделение на Ломоносова</a>
+                            <div class="blogs__date">Jan 22, 1931</div>
+                        </div>
+                    </div>
+
+                    <div class="blogs__item">
+                        <img class="blogs__img" src="assets/images/contact/3.webp" alt="">
+                        <div class="blogs__content">
+                            <a class="blogs__title" href="https://go.2gis.com/y3124a">Общежитие№4 и место создание лабы</a>
+                            <div class="blogs__date">Aug 23, 1988</div>
+                        </div>
+                    </div>
+                </div><!-- /.blogs -->
+            </div>
+
+            <div class="footer__col  footer__col--third">
+                <div class="footer__title">Resourse & Project</div>
+
+                <div class="resources">
+                    <a class="resources_item" href="https://github.com/Ru6ik" target="_blank">
+                        <img  src="assets/images/resources/GitHub-Logo.webp" alt="github Ru6ik">
+                    </a>
+                    <a class="resources_item" href="https://vk.com/d.khromov2000" target="_blank">
+                        <img src="assets/images/resources/vk-logo.png" alt="vk for Ru6ik">
+                    </a>
+                    <a class="resources_item" href="t.me/@Ru6ik_co0l" target="_blank">
+                        <img src="assets/images/resources/telegram-logo.png" alt="telegram for Ru6ik">
+                    </a>
+                    <a class="resources_item" href="https://se.ifmo.ru/" target="_blank">
+                        <img src="assets/images/resources/seIfmo.jpg" alt="site with variant">
+                    </a>
+                    <a class="resources_item" href="https://itmo.ru" target="_blank">
+                        <img src="assets/images/resources/itmo.jpg" alt="site ITMO">
+                    </a>
+                    <a class="resources_item" href="https://se.ifmo.ru/~s373336/web/lab1/" target="_blank">
+                        <img src="assets/images/resources/lab1.png" alt="first lab for Web">
+                    </a>
+                    <a class="resources_item" href="https://se.ifmo.ru/~s373336/web/lab2/" target="_blank">
+                        <img src="assets/images/resources/lab2.png" alt="second lab for Web">
+                    </a>
+                    <a class="resources_item" href="https://se.ifmo.ru/~s373336/web/lab3/" target="_blank">
+                        <img src="assets/images/resources/lab3.png" alt="third lab for Web">
+                    </a>
+                    <a class="resources_item" href="https://se.ifmo.ru/~s373336/web/lab4/" target="_blank">
+                        <img src="assets/images/resources/lab4.png" alt="four lab for Web">
+                    </a>
+                </div>
+            </div> <!--end resources-->
+        </div>
+
+        <div class="copyright">
+            © 2023 Lab#1 project by <span>Ru6ik</span>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
