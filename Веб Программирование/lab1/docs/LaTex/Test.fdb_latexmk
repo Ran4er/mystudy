@@ -1,0 +1,23 @@
+# Fdb version 4
+["pdflatex"] 1697466317 "c:/Users/ru6ik/Desktop/LaTex/Test.tex" "Test.pdf" "Test" 1697466362 2
+  "C:/Users/ru6ik/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1697454096 23185557 1d7b6fdf55646034c9431f2ba9a00d13 ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.sty" 1575399508 8356 7bbb2c2373aa810be568c29e333da8ed ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefinekeys.sty" 1576763304 5412 d5a2436094cd7be85769db90f29250a6 ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty" 1601735609 18568 4409f8f50cd365c68e684407e5350b1b ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds.sty" 1623005277 20089 80423eac55aa175305d35b49e04fe23b ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1669844196 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1669844196 8449 c314623021fbddd0180c05345324933c ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1665067579 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty" 1682162693 221029 5c00f036722c9c727bf1dd905b725918 ""
+  "C:/Users/ru6ik/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty" 1665066333 13815 760b0c02f691ea230f5359c4e1de23a7 ""
+  "Test.aux" 1697466317 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "Test.tex" 1697466312 6057 ed017b703dae54d300f770ae7a218048 ""
+  "c:/Users/ru6ik/Desktop/LaTex/Test.tex" 1697466312 6057 ed017b703dae54d300f770ae7a218048 ""
+  "pdfescape.sty" 0 -1 0 ""
+  (generated)
+  "Test.aux"
+  "Test.log"
+  "Test.pdf"
+  (rewritten before read)
