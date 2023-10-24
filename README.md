@@ -54,22 +54,22 @@
 | Предмет \ Семестр                          | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
 | ---                                        | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Информатика]()                                | :heavy_check_mark: |  |  |  |  |  |  |  |
-| [Основы профессиональной<br>деятельности](./1-2%20опд)    | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |  |
-| [Программирование](./1-2%20программирование)                           | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |  |
-| [Веб-программирование](./3%20веб)                           |  |  | :construction: |  |  |  |  |  |
-| [Языки программирования](./3%20япы)                           |  |  | :construction: |  |  |  |  |  |
-| [Базы данных](./2%20базы%20данных)                                |  | :heavy_check_mark: |  |  |  |  |  |  |
-| [Иностранный язык](./1-6%20английский%20язык)                           | :heavy_check_mark: | :heavy_check_mark: | :construction: | :hourglass: | :hourglass: | :hourglass: | | |
+| [Основы профессиональной<br>деятельности](./1-2%20ОПД)    | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |  |
+| [Программирование](./1-2%20Программирование)                           | :heavy_check_mark: | :heavy_check_mark: |  |  |  |  |  |  |
+| [Веб-программирование](./3%20Веб%20Программирование)                           |  |  | :construction: |  |  |  |  |  |
+| [Языки программирования](./3%20ЯПи)                           |  |  | :construction: |  |  |  |  |  |
+| [Базы данных](./2%20Базы%20Данных)                                |  | :heavy_check_mark: |  |  |  |  |  |  |
+| [Иностранный язык](./1-6%20Английский%20язык)                           | :heavy_check_mark: | :heavy_check_mark: | :construction: | :hourglass: | :hourglass: | :hourglass: | | |
 | [История](./1%20история)                                    | :heavy_check_mark: |  |  |  |  |  |  |  |
-| [Бизнес-модели<br>основных секторов<br>инновационной<br>экономики](./3%20бмосиэ)                                    |  |  | :construction: |  |  |  |  |  |
-| [Коммуникации и<br>командообразование](./2%20кик)       |  | :heavy_check_mark: |  |  |  |  |  |  |
-| [Математика](./1-3%20математика)                                 | :heavy_check_mark: | :heavy_check_mark:* | :construction: |  |  |  |  |  |
-| [Теория вероятностей](./3%20теорвер)                                 |  |  | :construction: |  |  |  |  |  |
-| [Физика](./3-4%20физика)                                 |  |  | :construction: | :hourglass: |  |  |  |  |
-| [Дискретная математика](./1-2%20дискретная%20математика)                      | :heavy_check_mark: | :heavy_check_mark:* |  |  |  |  |  |  |
+| [Бизнес-модели<br>основных секторов<br>инновационной<br>экономики](./3%20БМС)                                    |  |  | :construction: |  |  |  |  |  |
+| [Коммуникации и<br>командообразование](./2%20КиК)       |  | :heavy_check_mark: |  |  |  |  |  |  |
+| [Математика](./%20Математика)                                 | :heavy_check_mark: | :heavy_check_mark:* | :construction: |  |  |  |  |  |
+| [Теория вероятностей](./3%20Probability%20Theory)                                 |  |  | :construction: |  |  |  |  |  |
+| [Физика](./3-4%20Физика)                                 |  |  | :construction: | :hourglass: |  |  |  |  |
+| [Дискретная математика](./1-2%20Дискретная%20математика)                      | :heavy_check_mark: | :heavy_check_mark:* |  |  |  |  |  |  |
 | [Линейная алгебра<br>(продвинутый уровень)](./1-2%20линейная%20алгебра)  | :heavy_check_mark: | :walking:* |  |  |  |  |  |  |
 | Физическая<br>культура и спорт             | :heavy_check_mark: | :heavy_check_mark: | :construction: | :hourglass: | :hourglass: | :hourglass: | | |
-| [Безопасность<br>жизнедеятельности](./2%20бжд)          |  | :heavy_check_mark: |  |  |  |  |  |  |
+| [Безопасность<br>жизнедеятельности](./2%20БЖД)          |  | :heavy_check_mark: |  |  |  |  |  |  |
 | ITMOEnter                                  | :heavy_check_mark: |  |  |  |  |  |  |  |
 
 | :heavy_check_mark: | :construction: | :hourglass: |
