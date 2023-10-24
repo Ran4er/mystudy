@@ -61,7 +61,7 @@ function createNotification(){
 
 function validatingX(){
     try {
-        x = document.querySelector("input[type=radio]:checked").value;
+        x = document.querySelector("input[type=checkbox]:checked").value;
         return true;
       } catch (err) {
         createNotification("Значение X не выбрано");

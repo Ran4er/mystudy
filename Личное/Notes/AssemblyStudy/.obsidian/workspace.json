@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4a9913ef3eaccbe2",
+        "id": "28e32220103b37c6",
         "type": "tabs",
         "children": [
           {
-            "id": "3f001f132cd28655",
+            "id": "0da2b1db3d53c9e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f001f132cd28655",
+  "active": "0da2b1db3d53c9e3",
   "lastOpenFiles": [
-    "2023-10-15.md",
+    "ИТМО.md",
     "Assembly.md",
+    "Untitled",
+    "2023-10-15.md",
     "Pasted image 20231015154317.png"
   ]
 }
