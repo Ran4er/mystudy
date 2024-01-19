@@ -21,17 +21,8 @@ size_t read_size(){
 void array_int_fill( int64_t* array, size_t size ) {
 
     for(size_t i = 0; i < size; i++){
-
         array[i] = read_int64();
     }
-
-    int64_t mini = array[0];
-
-    for(size_t i = 1; i < size; i++){
-        if(array[i] < mini) mini = array[i];
-    }
-
-    printf("%" PRId64, mini);
 }
 
 // Считать размер массива в *size, выделить память под массив и заполнить его числами, вызвав array_int_fill
@@ -39,7 +30,7 @@ int64_t* array_int_read( size_t* size ) {
   
     *size = read_size();
 
-    if(*size == 0) intptr_print(x);
+    if(*size == 0) return 0;
 
     int64_t* arr = malloc(sizeof(int64_t) * (*size));
 
@@ -61,21 +52,20 @@ int64_t* array_int_min( int64_t* array, size_t size ) {
     }
 
     return &array[min];
-
 }
 
 // Выводит None если x == NULL, иначе число, на которое указывает x.
 void intptr_print( int64_t* x ) {
     if(x == NULL) printf("%s", "None");
-    else printf("%d", x);
+    else printf("%" PRId64, *x);
 }
 
 void perform() {
 
-    size_t size;
-    scanf("%zu", &size);
-    intptr_print(array_int_min(array_int_read(&size), size));
-    
+    size_t size = 0;
+    int64_t* arr = array_int_read(&size);
+    intptr_print(array_int_min(arr, size));
+    free(arr);
 }
 
 int main(){
