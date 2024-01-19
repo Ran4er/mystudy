@@ -1,7 +1,7 @@
-//Определение библиотек ввода, новых типов и malloc (для работы с кучей)
-#include<stdio.h> 
+#include<stdio.h>
 #include<stdlib.h>
 #include<inttypes.h>
+
 
 //Считывание эл. массива
 int64_t read_int64(){
@@ -39,7 +39,7 @@ int64_t* array_int_read( size_t* size ) {
   
     *size = read_size();
 
-    if(*size == 0) return 0;
+    if(*size == 0) intptr_print(x);
 
     int64_t* arr = malloc(sizeof(int64_t) * (*size));
 
@@ -48,13 +48,38 @@ int64_t* array_int_read( size_t* size ) {
     return arr;
 }
 
-int main(){
+int64_t* array_int_min( int64_t* array, size_t size ) {
+
+    if(size == 0) return NULL;
+    if(size == 1) return &array[0];
+
+    int64_t min = 0;
+    for(size_t i = 1; i < size; i++){
+
+        if(array[min] > array[i]) min = i;
+
+    }
+
+    return &array[min];
+
+}
+
+// Выводит None если x == NULL, иначе число, на которое указывает x.
+void intptr_print( int64_t* x ) {
+    if(x == NULL) printf("%s", "None");
+    else printf("%d", x);
+}
+
+void perform() {
+
     size_t size;
-    int64_t* arr = array_int_read(&size);
+    scanf("%zu", &size);
+    intptr_print(array_int_min(array_int_read(&size), size));
+    
+}
 
+int main(){
 
+    perform();
 
-    free(arr);
-
-    return 0;
 }
