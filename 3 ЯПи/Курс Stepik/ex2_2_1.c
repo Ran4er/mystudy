@@ -24,14 +24,6 @@ void array_int_fill( int64_t* array, size_t size ) {
 
         array[i] = read_int64();
     }
-
-    int64_t mini = array[0];
-
-    for(size_t i = 1; i < size; i++){
-        if(array[i] < mini) mini = array[i];
-    }
-
-    printf("%" PRId64, mini);
 }
 
 // Считать размер массива в *size, выделить память под массив и заполнить его числами, вызвав array_int_fill
@@ -52,7 +44,11 @@ int main(){
     size_t size;
     int64_t* arr = array_int_read(&size);
 
+    for(size_t i = 0; i < size; i++){
 
+        printf("%d ", arr[i]);
+
+    }
 
     free(arr);
 
