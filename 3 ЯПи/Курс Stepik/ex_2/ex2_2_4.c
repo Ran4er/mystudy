@@ -2,15 +2,6 @@
 #include<stdio.h>
 #include<inttypes.h>
 
-void array_int_print(int64_t* array, size_t size){
-
-    for(int i = 0; i < size; i++){
-
-        printf("% " PRId64, array[i]);
-
-    }
-}
-
 void print_newline(){
     printf("\n");
 }
@@ -34,6 +25,12 @@ void array_int_fill( int64_t* array, size_t size ) {
     }
 }
 
+void array_int_print(int64_t* array, size_t size) {
+    for(size_t i = 0; i < size; i++){
+        printf("%" PRId64 " ", array[i]);
+    }
+}
+
 int64_t* array_int_read( size_t* size ) {
   
     *size = read_size();
@@ -49,15 +46,22 @@ int64_t* array_int_read( size_t* size ) {
 
 
 int64_t** marray_read(size_t* rows, size_t** sizes){
-
-    int64_t** marray = malloc(sizeof(int64_t) * (*rows));
-
-    for(int i = 0; i < *rows; i++){
-
-        marray[i] = array_int_read(*sizes);
-
-    }
     
+    *rows = read_size();
+
+    if (*rows == 0) {
+        *sizes = NULL;
+        return NULL;
+    }
+
+    int64_t** marray = malloc(sizeof(int64_t*) * (*rows));
+    *sizes = malloc(sizeof(size_t) * (*rows));
+
+    for(size_t i = 0; i < *rows; i++){
+        marray[i] = array_int_read(&(*sizes)[i]);
+    }
+
+    return marray;
 
 }
 
@@ -70,22 +74,29 @@ void marray_print(int64_t** marray, size_t* sizes, size_t rows){
 
 }
 
+void marray_free(int64_t** marray, size_t rows){
+    for(size_t i = 0; i < rows; i++){
+        if(marray[i] == 0) continue;
+        free(marray[i]);
+    }
+    free(marray);
+}
+
 
 int main(){
     
-    int64_t n_rows;
-    scanf("%" SCNd64, n_rows);
-    for(int64_t i = 0; i < n_rows; i++){
+    size_t rows;
+    size_t* sizes;
+    int64_t** marray = marray_read(&rows, &sizes);
 
-        size_t n_sizes;
-        scanf("%zu", n_sizes);
+    marray_print(marray, sizes, rows);
 
-        size_t* ptr_size = &n_sizes;
-        size_t** sizes_arr = &ptr_size;
-
-        marray_print(marray_read(&n_rows, sizes_arr), ptr_size, n_rows);
-
+    // Free allocated memory
+    for(size_t i = 0; i < rows; i++){
+        free(marray[i]);
     }
+    free(marray);
+    free(sizes);
 
     return 0;
 
