@@ -2,6 +2,15 @@
 #include<stdio.h>
 #include<inttypes.h>
 
+void array_int_print(int64_t* array, size_t size){
+
+    for(int i = 0; i < size; i++){
+
+        printf("% " PRId64, array[i]);
+
+    }
+}
+
 void print_newline(){
     printf("\n");
 }
@@ -41,7 +50,13 @@ int64_t* array_int_read( size_t* size ) {
 
 int64_t** marray_read(size_t* rows, size_t** sizes){
 
-    rows = read_size();
+    int64_t** marray = malloc(sizeof(int64_t) * (*rows));
+
+    for(int i = 0; i < *rows; i++){
+
+        marray[i] = array_int_read(*sizes);
+
+    }
     
 
 }
@@ -57,8 +72,20 @@ void marray_print(int64_t** marray, size_t* sizes, size_t rows){
 
 
 int main(){
+    
+    int64_t n_rows;
+    scanf("%" SCNd64, n_rows);
+    for(int64_t i = 0; i < n_rows; i++){
 
+        size_t n_sizes;
+        scanf("%zu", n_sizes);
 
+        size_t* ptr_size = &n_sizes;
+        size_t** sizes_arr = &ptr_size;
+
+        marray_print(marray_read(&n_rows, sizes_arr), ptr_size, n_rows);
+
+    }
 
     return 0;
 
