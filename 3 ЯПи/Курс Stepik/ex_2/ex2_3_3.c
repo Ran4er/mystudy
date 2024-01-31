@@ -228,9 +228,17 @@ void perform() {
   array_array_int_free( array );
 }
 
+/*
+Test case:
+3
+9 3 2 4 54 9 2 1 872 123
+8 123 12354 23 232 43412 534 8237 -99292
+3 45 2 245
+*/
+
 int main(){
 
   perform();
 
-    return 0;
+  return 0;
 }
