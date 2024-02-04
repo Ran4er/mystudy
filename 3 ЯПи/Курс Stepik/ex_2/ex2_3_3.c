@@ -1,14 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
-
-#ifndef _cplusplus
-
-    typedef unsigned char bool;
-    static const bool true;
-    static const bool false;
-
-#endif
+#include <stdbool.h>
 
 /* Вы можете пользоваться этими функциями из предыдущих заданий */
 size_t read_size() { size_t i; scanf("%zu", &i); return i; }
@@ -66,13 +59,16 @@ void array_int_print( struct array_int array ) {
 }
 struct maybe_int64 array_int_min( struct array_int array ) {
 
-    if(array.size == 0) return none_int64;
-    struct maybe_int64 mini = { (array.data)[0], 1};
-    for(size_t i = 1; i < array.size; i++){
-        if(mini.value > (array.data)[i]) mini.value = (array.data)[i];
+    if (array.size == 0) {
+        return none_int64;
     }
-
-    return mini;
+    int64_t min = array.data[0];
+    for (size_t i = 1; i < array.size; i++) {
+        if (array.data[i] < min) {
+            min = array.data[i];
+        }
+    }
+    return (struct maybe_int64){min, true};
 
 }
 void array_int_free( struct array_int a ) { 
@@ -83,8 +79,8 @@ void array_int_free( struct array_int a ) {
 }
 
 void array_int_normalize( struct array_int array, int64_t m ) {
-  for (size_t i = 0; i < array.size; i = i + 1) {
-    array.data[i] = array.data[i] - m;
+  for (size_t i = 0; i < array.size; i++) {
+    array.data[i] -= m;
   }
 }
 
@@ -127,19 +123,21 @@ bool array_array_int_set_row( struct array_array_int a, size_t i, struct array_i
 
 struct maybe_int64 array_array_int_get( struct array_array_int a, size_t i, size_t j ) {
 
-  if(i > a.size) return none_int64;
-  if(j > (a.data)[i].size) return none_int64;
-
-  return array_int_get((a.data)[i], j);
+  if (i < a.size && j < a.data[i].size) {
+    return array_int_get(a.data[i], j);
+  } else {
+    return none_int64;
+  }
 
 }
 
 bool array_array_int_set( struct array_array_int a, size_t i, size_t j, int64_t value ) {
 
-  if(i > a.size) return false;
-  if(j > (a.data)->size) return false;
-  array_int_set((a.data)[i], j, value);
-  return true;
+  if (i < a.size && j < a.data[i].size) {
+    return array_int_set(a.data[i], j, value);
+  } else {
+    return false;
+  }
 
 }
 
@@ -148,16 +146,13 @@ bool array_array_int_set( struct array_array_int a, size_t i, size_t j, int64_t 
 struct array_array_int array_array_int_read() {
 
   const size_t rows = read_size();
-  if (rows > 0) {
-    struct array_int* array = malloc( sizeof(int64_t) * rows );
-    for (size_t i = 0; i < rows; i++) {
-
-      array[i] = array_int_read();
-
-    }
-    return (struct array_array_int) { .data = array, .size = rows};
-
-  } else return (struct array_array_int) {0};
+  struct array_array_int result;
+  result.size = rows;
+  result.data = malloc(sizeof(struct array_int) * rows);
+  for (size_t i = 0; i < rows; i++) {
+    result.data[i] = array_int_read();
+  }
+  return result;
   
 
 }
@@ -166,10 +161,8 @@ struct array_array_int array_array_int_read() {
 void array_array_int_print( struct array_array_int array) {
 
   for (size_t i = 0; i < array.size; i++) {
-
-    array_int_print((array.data)[i]);
+    array_int_print(array.data[i]);
     printf("\n");
-
   }
 
 }
@@ -180,15 +173,16 @@ void array_array_int_print( struct array_array_int array) {
 // найти минимальный элемент в массиве массивов
 struct maybe_int64 array_array_int_min( struct array_array_int array ) {
 
-  if( array.data->size == 0 ) return none_int64; 
-  struct maybe_int64 mini = { (array.data)[0].data[0], 1 };
-  for (size_t i = 0; i < array.size; i++) {
-
-    if(mini.value > array_int_min( (array.data)[i] ).value) mini.value = array_int_min( (array.data)[i] ).value;
-
-  }
-
-  return mini;
+  if( array.size == 0 ) return none_int64; 
+  int64_t min = array.data[0].data[0];
+    for (size_t i = 0; i < array.size; i++) {
+        for (size_t j = 0; j < array.data[i].size; j++) {
+            if (array.data[i].data[j] < min) {
+                min = array.data[i].data[j];
+            }
+        }
+    }
+    return (struct maybe_int64){min, true};
 
 }
 
