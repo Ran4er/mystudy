@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans.ttf");
+}
+
+* {
+    font-family: "Open Sans";
+    text-align: center;
+    font-weight: normal;
+}
+
+body {
+    background-color: #FFFAFF;
+    margin-top: 3em;
+}
+
+header {
+    font-size: 0.6em;
+    top: 0;
+}
+
+header h1 {
+    font-family: "Open Sans";
+    font-style: italic;
+}
+
+header {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  color: white;
+  background-color: #1E1B18;
+  left: 0;
+}
+
+thead * {
+    margin-top: 4%
+  }
+  
+  tfoot * {
+    margin-bottom: 4% !important
+  }
+  
+  #mainTable {
+    background-color: ghostwhite;
+    width: 75%;
+    margin: 80px auto;
+  }
+  
+  input,
+  svg {
+    width: 100%;
+    border: 2px solid #0A2463;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  input[type=radio] {
+    float:right;
+    width: 50px;
+  }
+  
+  input,
+  a {
+    cursor: pointer;
+  }
+  
+  svg {
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 7px 1px gray;
+    position: relative;
+    bottom: 80px;
+  }
+  
+  figure img {
+    width: 47px;
+    height: 55px;
+  }
+  
+  figcaption {
+    font-size: 0.8em
+  }
+  
+  .illuminated:active {
+    border: 2px solid #4C956C;
+    outline: none;
+  }
+  
+  .success {
+    font-weight: bold;
+    color: #09a53d;
+  }
+  
+  .fail {
+    font-weight: bold;
+    color: #D8315B;
+  }
+  
+  hr {
+    color: #D8315B;
+    width: 95%;
+  }
+  
+  .notification {
+    color: white;
+    padding: 1%;
+  }
+  
+  .outputStub {
+    background-color: #0A2463;
+  }
+  
+  #outputContainer {
+    padding-bottom: 20px;
+  }
+  
+  .errorStub {
+    background-color: #dc143b
+  }
+  
+  #outputTable {
+    border: 1px solid #000720;
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+  }
+  
+  #outputTable th {
+    background-color: #000720;
+    color: white;
+  }
+  
+  #outputTable * {
+    padding: 25px;
+  }
+  
+  #checkButton {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: relative;
+    float: right;
+    background-color: #eb2a5a;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 4px;
+  }
+  
+  #checkButton:hover {
+    background: white;
+    box-shadow: 0 2px 10px 5px #eb2a5a;
+    color: black;
+  }
+  
+  #checkButton::after {
+    content: "";
+    background: #eb2a5a;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  #checkButton:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  #checkButton:focus {
+    outline: 0
+  }
