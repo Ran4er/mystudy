@@ -83,5 +83,3 @@ Thank you.
 
 - **Argument:** Relationships where people choose each other tend to last longer and be more satisfying. When you pick your partner, you’re more likely to be committed to making it work.
 - **Example:** Studies show that couples who fall in love on their own often report higher happiness than those in arranged setups.
-
-10 минут дорожка скорость 5.5 наклон 6.5

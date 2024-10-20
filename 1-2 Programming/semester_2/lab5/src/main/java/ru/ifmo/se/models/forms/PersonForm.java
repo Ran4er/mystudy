@@ -53,6 +53,7 @@ public class PersonForm extends Form<Person>{
                 console.println("Введите имя человека:");
                 console.ps2();
                 name = Interrogator.getUserScanner().nextLine().trim();
+                if (fileMode) console.println(name);
                 if (name.equals("")) throw new MustBeNotEmptyException();
                 break;
             } catch (NoSuchElementException e) {
@@ -100,13 +101,16 @@ public class PersonForm extends Form<Person>{
     }
 
     private LocalDateTime askBirthday() {
-        Scanner sc = new Scanner(System.in);
+        var fileMode = Interrogator.fileMode();
         LocalDateTime birthday;
         while (true) {
             try {
-                System.out.println("Введите день рождения человека: ");
-                System.out.print("> ");
-                birthday = LocalDateTime.parse(sc.nextLine());
+                console.println("Введите день рождения человека: ");
+                console.ps2();
+                var strBirthday = Interrogator.getUserScanner().nextLine().trim();
+                if (fileMode) console.println(strBirthday);
+
+                birthday = LocalDateTime.parse(strBirthday);
                 break;
             } catch (NoSuchElementException e) {
                 System.out.println("День рождения не указан!");

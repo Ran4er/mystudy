@@ -1,47 +1,42 @@
 plugins {
-    id 'java'
-    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id 'maven-publish'
 }
 
-group = 'ru.ifmo.se'
-version = '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.20'
-    implementation 'com.google.guava:guava:31.1-jre'
-}
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'  // Ensure correct encoding
-}
-
-tasks.withType(JavaExec) {
-    systemProperty "file.encoding", "UTF-8"
-}
-
-jar {
-    manifest {
-        attributes(
-                "Implementation-Title": "Gradle",
-                "Implementation-Version": version
-        )
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'com.github.johnrengelman.shadow'
+    repositories {
+        mavenCentral()
     }
 }
 
-run {
-    standardInput = System.in
+project(':server') {
+    apply plugin: 'application'
+    mainClassName = 'server.App'
+    dependencies {
+        implementation project(':common')
+        implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.15'
+    }
+    jar {
+        manifest {
+            attributes 'Main-Class': 'server.App'
+        }
+    }
 }
 
-test {
-    useJUnitPlatform()
-}
-
-application {
-    mainClass = 'ru.ifmo.se.Main'
+project(':client') {
+    apply plugin: 'application'
+    mainClassName = 'client.App'
+    dependencies {
+        implementation project(':common')
+    }
+    run {
+        standardInput = System.in
+    }
+    jar {
+        manifest {
+            attributes 'Main-Class': 'client.App'
+        }
+    }
 }

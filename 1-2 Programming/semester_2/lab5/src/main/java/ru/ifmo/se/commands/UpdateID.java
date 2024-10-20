@@ -23,10 +23,10 @@ public class UpdateID extends Command {
     @Override
     public boolean apply(String[] userCommand) {
         try {
-            if(!userCommand[1].isEmpty()) throw new WrongAmountOfElementsException();
+            if(userCommand[1].isEmpty()) throw new WrongAmountOfElementsException();
             if(collectionManager.collectionSize() == 0) throw new CollectionIsEmptyException();
 
-            var id = Integer.parseInt("1");
+            var id = Integer.parseInt(userCommand[1]);
             var person = collectionManager.getById(id);
             if (person == null) throw new NotFoundException();
 
@@ -47,7 +47,7 @@ public class UpdateID extends Command {
         } catch (NotFoundException exception) {
             console.printError("Продукта с таким ID в коллекции нет!");
         } catch (InvalidFormException e) {
-            console.printError("Поля продукта не валидны! Продукт не обновлен!");
+            console.printError("Поля человека не валидны! Данные человека не обновлены!");
         } catch (IncorrectInputInScriptException e) {
             console.printError("Ошибка в создании экземляра персоны!");
         }

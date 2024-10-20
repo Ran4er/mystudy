@@ -1,59 +1,40 @@
-<persons>
-    <person>
-        <id>1</id>
-        <name>John Doe</name>
-        <coordinates>
-            <x>10</x>
-            <y>20</y>
-        </coordinates>
-        <creationDate>2023-01-01T10:15:30+01:00[Europe/Paris]</creationDate>
-        <height>180.5</height>
-        <birthday>1990-05-15T12:00:00</birthday>
-        <passportID>123456789</passportID>
-        <nationality>USA</nationality>
-        <location>
-            <x>50</x>
-            <y>100</y>
-            <z>200</z>
-            <name>New York</name>
-        </location>
-    </person>
-    <person>
-        <id>2</id>
-        <name>Jane Smith</name>
-        <coordinates>
-            <x>30</x>
-            <y>40</y>
-        </coordinates>
-        <creationDate>2023-01-10T11:20:30+01:00[Europe/Paris]</creationDate>
-        <height>165.2</height>
-        <birthday>1985-10-20T09:00:00</birthday>
-        <passportID>987654321</passportID>
-        <nationality>USA</nationality>
-        <location>
-            <x>60</x>
-            <y>120</y>
-            <z>240</z>
-            <name>Toronto</name>
-        </location>
-    </person>
-    <person>
-        <id>3</id>
-        <name>Michael Brown</name>
-        <coordinates>
-            <x>50</x>
-            <y>60</y>
-        </coordinates>
-        <creationDate>2023-02-15T14:30:45+01:00[Europe/Paris]</creationDate>
-        <height>175.0</height>
-        <birthday>1992-07-23T08:30:00</birthday>
-        <passportID>1122334455</passportID>
-        <nationality>CHINA</nationality>
-        <location>
-            <x>100</x>
-            <y>200</y>
-            <z>300</z>
-            <name>London</name>
-        </location>
-    </person>
-</persons>
+<list>
+  <person>
+    <id>2</id>
+    <name>Jane Smith</name>
+    <coordinates>
+      <x>30</x>
+      <y>40.0</y>
+    </coordinates>
+    <creationDate>2023-01-10T11:20:30+01:00[Europe/Paris]</creationDate>
+    <height>165.2</height>
+    <birthday>1985-10-20T09:00:00</birthday>
+    <passportID>987654321</passportID>
+    <nationality>USA</nationality>
+    <location>
+      <x>60</x>
+      <y>120.0</y>
+      <z>240.0</z>
+      <name>Toronto</name>
+    </location>
+  </person>
+  <person>
+    <id>3</id>
+    <name>Michael Brown</name>
+    <coordinates>
+      <x>50</x>
+      <y>60.0</y>
+    </coordinates>
+    <creationDate>2023-02-15T14:30:45+01:00[Europe/Paris]</creationDate>
+    <height>175.0</height>
+    <birthday>1992-07-23T08:30:00</birthday>
+    <passportID>1122334455</passportID>
+    <nationality>CHINA</nationality>
+    <location>
+      <x>100</x>
+      <y>200.0</y>
+      <z>300.0</z>
+      <name>London</name>
+    </location>
+  </person>
+</list>

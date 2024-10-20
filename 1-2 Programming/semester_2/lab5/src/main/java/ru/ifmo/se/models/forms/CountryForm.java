@@ -5,7 +5,6 @@ import ru.ifmo.se.utils.Interrogator;
 import ru.ifmo.se.utils.console.Console;
 
 import java.util.NoSuchElementException;
-import java.util.Scanner;
 
 public class CountryForm extends Form<Country> {
 
@@ -22,7 +21,7 @@ public class CountryForm extends Form<Country> {
         Country country;
         while (true) {
             try {
-                console.println("Список всех стран: " + Country.values());
+                console.println("Список всех стран: " + Country.names());
                 console.println("Введите страну: ");
                 console.ps2();
                 strCountry = Interrogator.getUserScanner().nextLine().trim();

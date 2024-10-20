@@ -4,7 +4,7 @@ ENV APP_HOME=/usr/app/
 WORKDIR $APP_HOME
 
 COPY settings.gradle $APP_HOME
-COPY app/build.gradle $APP_HOME/app/build.gradle
+COPY ./build.gradle $APP_HOME/build.gradle
 COPY gradle $APP_HOME/gradle
 COPY --chown=gradle:gradle . .
 

@@ -24,7 +24,7 @@ public class Help extends Command {
      */
     @Override
     public boolean apply(String[] userCommand) {
-        if (!userCommand[0].isEmpty()) {
+        if (!userCommand[1].isEmpty()) {
             console.println("Использование: '" + getName() + "'");
             return false;
         }

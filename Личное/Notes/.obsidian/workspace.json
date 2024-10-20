@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "7becc99ffb3ead6d",
+    "type": "split",
+    "children": [
+      {
+        "id": "a469dbdd7f41792a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f78982cdbe0f6962",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyNotes/Obsidian/Lecture_1/Управление знаниями в Obsidian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Управление знаниями в Obsidian"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "378862de6edbb608",
+    "type": "split",
+    "children": [
+      {
+        "id": "47307733ba92ffce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec67dbaa7415dd68",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "42aa629fa04e68b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9ca29d8d0808239b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "104185a505894f50",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bb7bb659645ec22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8a75eb415dc5406",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MyNotes/Obsidian/Lecture_1/Управление знаниями в Obsidian.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Управление знаниями в Obsidian"
+            }
+          },
+          {
+            "id": "7e21a4bff71035d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MyNotes/Obsidian/Lecture_1/Управление знаниями в Obsidian.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Управление знаниями в Obsidian"
+            }
+          },
+          {
+            "id": "1953841640cdbe49",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7feef8afb0c804a9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MyNotes/Obsidian/Lecture_1/Управление знаниями в Obsidian.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Управление знаниями в Obsidian"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f78982cdbe0f6962",
+  "lastOpenFiles": [
+    "AssemblyStudy/Assembly.md",
+    "MyNotes/Information to help with learning/Mnemonic technic.md",
+    "MyNotes/Untitled.md",
+    "MyNotes/Information to help with learning/images/Mnemonic technic",
+    "MyNotes/Information to help with learning/images",
+    "MyNotes/Information to help with learning",
+    "MyNotes/Information to help with learning/images/Mnemonic technic/Pasted image 20241018173743.png",
+    "Мнемотехника.md",
+    "My learning/Vk Education/Big Data/Introduction in Big Data.md",
+    "My learning/Vk Education/Big Data",
+    "My learning/Vk Education",
+    "MyNotes/Список книг на прочтение/Welcome.md",
+    "My learning",
+    "MyNotes/Список книг на прочтение/Первая выборка.md",
+    "MyNotes/Math analysis/1 Semester/§1. Логическая символика..md",
+    "MyNotes/Obsidian/Lecture_1/Управление знаниями в Obsidian.md",
+    "MyNotes/Math analysis/1 Semester/§2. Множества и элементарные операции над множествами..md"
+  ]
+}
