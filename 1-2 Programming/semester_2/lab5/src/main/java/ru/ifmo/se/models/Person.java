@@ -67,7 +67,7 @@ public class Person implements Validatable, Comparable<Person> {
         if (creationDate == null) return false;
         if (height <= 0) return false;
         if (passportID == null) return false;
-        return (location == null);
+        return (location != null);
     }
 
     public void update(Person person) {

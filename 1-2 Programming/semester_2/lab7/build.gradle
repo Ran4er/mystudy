@@ -1,0 +1,42 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id 'maven-publish'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'com.github.johnrengelman.shadow'
+    repositories {
+        mavenCentral()
+    }
+}
+
+project(':Server') {
+    apply plugin: 'application'
+    mainClassName = 'Server.Server'
+    dependencies {
+        implementation project(':Common')
+        implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.15'
+    }
+    jar {
+        manifest {
+            attributes 'Main-Class': 'Server.Server'
+        }
+    }
+}
+
+project(':Client') {
+    apply plugin: 'application'
+    mainClassName = 'Client.Client'
+    dependencies {
+        implementation project(':Common')
+    }
+    run {
+        standardInput = System.in
+    }
+    jar {
+        manifest {
+            attributes 'Main-Class': 'Client.Client'
+        }
+    }
+}

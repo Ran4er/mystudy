@@ -28,10 +28,11 @@ public class RemoveByID extends Command {
     @Override
     public boolean apply(String[] userCommand) {
         try {
-            if(!userCommand[1].isEmpty()) throw new WrongAmountOfElementsException();
+            if(userCommand[1].isEmpty()) throw new WrongAmountOfElementsException();
             if(collectionManager.collectionSize() == 0) throw new CollectionIsEmptyException();
+            console.ps2();
 
-            var id = Integer.parseInt("1");
+            var id = Integer.parseInt(userCommand[1]);
             var productRemove = collectionManager.getById(id);
             if (productRemove == null) throw new NotFoundException();
 

@@ -7,9 +7,7 @@ import ru.ifmo.se.models.Location;
 import ru.ifmo.se.utils.Interrogator;
 import ru.ifmo.se.utils.console.Console;
 
-import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
-import java.util.Scanner;
 
 public class LocationForm extends Form<Location> {
 
@@ -104,7 +102,7 @@ public class LocationForm extends Form<Location> {
         return z;
     }
 
-    public String askName() throws  IncorrectInputInScriptException {
+    public String askName() throws IncorrectInputInScriptException {
         var fileMode = Interrogator.fileMode();
         String name;
         while (true) {

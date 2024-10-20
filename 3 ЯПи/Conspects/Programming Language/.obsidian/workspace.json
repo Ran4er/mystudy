@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "c0e611865be38463",
+    "type": "split",
+    "children": [
+      {
+        "id": "fad0e2df9dee1d2a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "686c31a3f350c6f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lab_1/Lab 1 LP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lab 1 LP"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19d19162ef6600a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d0173d893a4a380",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "914caca7661751e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6a13449638e8bcdc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "660c454fafeac24b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "97c4fe96d6cf0e87",
+    "type": "split",
+    "children": [
+      {
+        "id": "771a904a1fa8a760",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8830302fef2367c0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lab_1/Lab 1 LP.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Lab 1 LP"
+            }
+          },
+          {
+            "id": "4f59c4136d4f4f00",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Lab_1/Lab 1 LP.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Lab 1 LP"
+            }
+          },
+          {
+            "id": "7d59d3c466a47c3e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ba80e53e1da9bc61",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Lab_1/Lab 1 LP.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Lab 1 LP"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "686c31a3f350c6f9",
+  "lastOpenFiles": [
+    "Welcome.md",
+    "Lab_1/Lab 1 LP.md",
+    "Hachathon.md",
+    "Распределение по папкам.md",
+    "Lab_2",
+    "Lab_1/Images/Pasted image 20241006161423.png",
+    "Lab_1/Images",
+    "Lab_1",
+    "Lab_1/Images/Pasted image 20241006161329.png"
+  ]
+}

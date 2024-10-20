@@ -149,7 +149,6 @@ thead * {
     width: 150px;
     transition-duration: 0.4s;
     overflow: hidden;
-    box-shadow: 0 5px 15px #193047;
     border-radius: 4px;
   }
   

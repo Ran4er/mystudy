@@ -38,7 +38,7 @@ public class Main {
             register("remove_by_id", new RemoveByID(console, collectionManager));
             register("clear", new Clear(console, collectionManager));
             register("save", new Save(console, collectionManager));
-            register("execute_script", new ExecuteScript());
+            register("execute_script", new ExecuteScript(console));
             register("exit", new Exit(console));
             register("sort", new Sort(console, collectionManager));
             register("add_if_min", new AddIfMin(console, collectionManager));

@@ -22,7 +22,7 @@ public class Location implements Validatable {
         if (x == null) return false;
         if (y == null) return false;
         if (z == null) return false;
-        return name.isEmpty();
+        return !(name.isEmpty());
     }
 
     public Long getX() {

@@ -17,20 +17,18 @@ dependencies {
     implementation 'com.google.guava:guava:31.1-jre'
 }
 
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'  // Ensure correct encoding
-}
 
-tasks.withType(JavaExec) {
-    systemProperty "file.encoding", "UTF-8"
-}
 
 jar {
     manifest {
         attributes(
                 "Implementation-Title": "Gradle",
-                "Implementation-Version": version
+                "Implementation-Version": version,
+                'Main-Class': 'ru.ifmo.se.Main'
         )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
 
