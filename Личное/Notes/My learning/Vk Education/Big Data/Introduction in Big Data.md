@@ -14,3 +14,20 @@
 
 # Evolution of systems storage data
 
+#### RDBMS (Relation Database Management System)
+
+ - Храним и читаем данные построчно
+ - Жёсткая структура хранимых данных
+ - ACID (atomicity - атомарность, consistency - согласованность, isolation - изолированность, durability - стойкость)
+
+Примерами служат: MySQL, PostgreSQL, Oracle DB
+
+#### NoSColumn-oriented DBMS
+
+- Храним и читаем данные в колонках
+- Эффективнее работаем с большими таблицами
+- Эффективное сжатие
+- Лучше, чем классические RDBMS, подходит для аналитики
+
+Примеры: ClickHouse, druid, Amazon Redshift
+
