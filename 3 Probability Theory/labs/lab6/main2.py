@@ -1,88 +1,258 @@
 import math
 import matplotlib.pyplot as plt
+import numpy as np
+from collections import defaultdict
+import os
 
-# Исходные данные
-data = [-0.53, -0.93, 0.48, -1.55, -1.34, -0.04, -0.84, 0.57, 0.76, 0.30, -0.87, -0.41, 0.81, -1.42, -0.61, -0.33, -1.33, 0.62, -0.48, -0.35]
+class Chart:
+    def __init__(self, x_label: str, y_label: str, title: str):
+        self.x_label = x_label
+        self.y_label = y_label
+        self.title = title
+        self.fig, self.ax = plt.subplots()
+        self.ax.set_title(title)
+        self.ax.set_xlabel(x_label)
+        self.ax.set_ylabel(y_label)
+        self.ax.grid(True)
 
-# Сортируем данные
-sorted_data = sorted(data)
+    def add_line(self, x: list, y: list, label: str = None, linewidth: float = 2, marker: str = None):
+        self.ax.plot(x, y, label=label, linewidth=linewidth, marker=marker)
 
-# 1. Вариационный ряд
-print("Вариационный ряд:", sorted_data)
+    def add_polygonal_line(self, x: list, y: list, label: str = None, linewidth: float = 2):
+        self.ax.plot(x, y, label=label, linewidth=linewidth)
 
-# 2. Статистический ряд
-freq = {x: sorted_data.count(x) for x in sorted_data}
-print("Статистический ряд (значение: частота):", freq)
+    def add_histogram(self, x: list, heights: list, width: float, label: str = None):
+        self.ax.bar(x, heights, width=width, align='edge', alpha=0.5, label=label, edgecolor='black')
 
-# 3. Числовые характеристики
-n = len(sorted_data)
-mean = sum(sorted_data) / n  # Выборочное среднее
-variance = sum((x - mean) ** 2 for x in sorted_data) / n  # Выборочная дисперсия
-corrected_variance = sum((x - mean) ** 2 for x in sorted_data) / (n - 1)  # Исправленная дисперсия
-std_dev = math.sqrt(variance)  # Выборочное СКО
-corrected_std_dev = math.sqrt(corrected_variance)  # Исправленное СКО
+    def save_png(self, name: str):
+        self.ax.legend(loc='upper left', bbox_to_anchor=(1.05, 1), fontsize='small', title="History")
+        plt.tight_layout(rect=(0.0, 0.0, 0.85, 1.0))
+        plt.savefig(f"{name}.png")
+        plt.show()
+        plt.close(self.fig)
 
-print(f"Выборочное среднее: {mean:.2f}")
-print(f"Выборочная дисперсия: {variance:.2f}")
-print(f"Исправленная дисперсия: {corrected_variance:.2f}")
-print(f"Выборочное стандартное отклонение: {std_dev:.2f}")
-print(f"Исправленное стандартное отклонение: {corrected_std_dev:.2f}")
+class ProbabilityTheory:
+    def __init__(self, values: list):
+        self.values = sorted(values)
+        self.n = len(values)
+        self.xi = []
+        self.ni = []
+        self.pi = []
 
-# 4. Функция распределения (аналитический вид и график)
-ecdf = [(x, sorted_data.index(x) / n) for x in sorted_data]
+    def get_var_values(self):
+        print("! Вариационный ряд:")
+        print(self.values)
+        print("\n")
 
-# Аналитический вид: F(x) = количество элементов <= x / n
-def empirical_distribution_function(x):
-    return sum(1 for i in sorted_data if i <= x) / n
+    def calculate_statistical_series(self):
+        print("! Статистический ряд:")
+        frequency = defaultdict(int)
+        for x in self.values:
+            frequency[x] += 1
+        for value in sorted(frequency.keys()):
+            print(f"x = {value:.2f}, n = {frequency[value]}")
+        print("\n")
 
-print("Эмпирическая функция распределения:")
-for x in sorted_data:
-    print(f"F({x}) = {empirical_distribution_function(x):.2f}")
 
-# График функции распределения
-x_vals = sorted(set(sorted_data))
-y_vals = [empirical_distribution_function(x) for x in x_vals]
-plt.step(x_vals, y_vals, where='post')
-plt.title("Эмпирическая функция распределения")
-plt.xlabel("Значение")
-plt.ylabel("F(x)")
-plt.grid()
-plt.show()
+    def get_extreme_values(self):
+        print("! Экстремальные значения:")
+        print(f"MIN = {self.values[0]}")
+        print(f"MAX = {self.values[-1]}\n")
 
-# 5. Группированный (интервальный) ряд
-# Число интервалов по формуле Стерджесса
-num_intervals = 1 + math.ceil(math.log2(n))
-interval_width = math.ceil((max(sorted_data) - min(sorted_data)) / num_intervals)
+    def get_selection_size(self):
+        range_val = self.values[-1] - self.values[0]
+        print("! Размах выборки:")
+        print(f"{range_val}\n")
 
-intervals = [
-    (min(sorted_data) + i * interval_width, min(sorted_data) + (i + 1) * interval_width)
-    for i in range(num_intervals)
-]
+    def calculate_numeric_characteristics(self):
+        print("! Числовые характеристики:")
 
-grouped_freq = [sum(1 for x in sorted_data if low <= x < high) for low, high in intervals]
+        # Медиана
+        if self.n % 2 == 1:
+            median = self.values[self.n // 2]
+        else:
+            median = (self.values[self.n // 2 - 1] + self.values[self.n // 2]) / 2
+        print(f"Медиана: {median:.2f}")
 
-# Вывод группированного ряда
-print("Группированный ряд (интервалы: частота):")
-for (low, high), freq in zip(intervals, grouped_freq):
-    print(f"[{low}; {high}): {freq}")
+        # Мода
+        frequency = defaultdict(int)
+        for x in self.values:
+            frequency[x] += 1
+        mode = [k for k, v in frequency.items() if v == max(frequency.values())]
+        if len(mode) == len(frequency):
+            mode_value = "Нет явной моды"
+        else:
+            mode_value = ", ".join(f"{m:.2f}" for m in mode)
+        print(f"Мода: {mode_value}\n")
 
-# Гистограмма
-plt.bar(
-    range(num_intervals),
-    grouped_freq,
-    width=0.8,
-    tick_label=[f"[{low}; {high})" for low, high in intervals],
-)
-plt.title("Гистограмма частот")
-plt.xlabel("Интервалы")
-plt.ylabel("Частота")
-plt.grid()
-plt.show()
+    def discrepancy_calculation(self):
+        frequency = defaultdict(int)
+        for x in self.values:
+            frequency[x] += 1
 
-# Полигон
-plt.plot(range(num_intervals), grouped_freq, marker='o')
-plt.title("Полигон частот")
-plt.xlabel("Интервалы")
-plt.ylabel("Частота")
-plt.grid()
-plt.show()
+        for x in sorted(frequency.keys()):
+            self.xi.append(x)
+            self.ni.append(frequency[x])
+            self.pi.append(frequency[x] / self.n)
+
+        expected_value = sum(x * p for x, p in zip(self.xi, self.pi))
+        print("! Оценка математического ожидания")
+        print(f"{expected_value:.2f}\n")
+
+        variance = sum(((x - expected_value) ** 2) * n for x, n in zip(self.xi, self.ni)) / self.n
+        corrected_variance = (self.n / (self.n - 1)) * variance if self.n > 1 else 0
+        print("! Дисперсия")
+        print(f"{variance:.2f}\n")
+        print("! Исправленная дисперсия")
+        print(f"{corrected_variance:.2f}\n")
+        print("! Cреднеквадратическоe отклонение")
+        print(f"{math.sqrt(variance):.2f}\n")
+        print("! Исправленное СКО")
+        print(f"{math.sqrt(corrected_variance):.2f}\n")
+
+    def get_h(self):
+        return (self.values[-1] - self.values[0]) / (1 + math.log2(self.n)) # Формула Стерджеса
+
+    def get_m(self):
+        return math.ceil(1 + math.log2(self.n))
+    
+    def calculate_empiric_function(self):
+        print("\t\t\t! Функция")
+        print(f"\t\t\tx\t<=\t{self.xi[0]:.2f}\t->\t0.00")
+
+        h = 0
+        chart = Chart("x", "F(X)", "Эмпирическая функция")
+
+
+        x_start = self.values[0] - 1
+        chart.add_line([x_start, self.xi[0]], [0, 0], label=f"x <= {self.xi[0]:.2f}")
+
+
+        for i in range(len(self.xi)):
+            h += self.pi[i]
+            if i < len(self.xi) - 1:
+                print(f"{self.xi[i]:.2f}\t<\tx\t<=\t{self.xi[i + 1]:.2f}\t->\t{h:.2f}")
+                chart.add_line([self.xi[i], self.xi[i + 1]], [h, h],
+                               label=f"{self.xi[i]:.2f} < x <= {self.xi[i + 1]:.2f}")
+
+
+        print(f"{self.xi[-1]:.2f}\t<\tx\t\t\t\t->\t{h:.2f}")
+        chart.add_line([self.xi[-1], self.xi[-1] + 1], [h, h], label=f"{self.xi[-1]:.2f} < x")
+
+
+        chart.save_png("EmpiricFunction")
+
+    def draw_frequency_polygon(self):
+        h = self.get_h()
+        m = self.get_m()
+        frequency = [0] * m
+        x_start = self.values[0] - h / 2
+
+        for value in self.values:
+            index = int((value - x_start) // h)
+            if index >= m:
+                index = m - 1
+            frequency[index] += 1
+
+        print("! Полигон частот:")
+        xs = []
+        ys = []
+        chart = Chart("x", "p_i", "Полигон частот")
+        for i in range(m):
+            freq = frequency[i] / self.n
+            bin_center = x_start + h / 2 + i * h
+            xs.append(bin_center)
+            ys.append(freq)
+            print(f"[ {x_start + i * h:.2f} : {x_start + (i + 1) * h:.2f} ) -> {freq:.2f}")
+
+        chart.add_polygonal_line(xs, ys, label="Frequency Polygon")
+        chart.save_png("FrequencyPolygon")
+
+    def draw_histogram(self):
+        h = self.get_h()
+        m = self.get_m()
+        frequency = [0] * m
+        x_start = self.values[0] - h / 2
+
+        for value in self.values:
+            index = int((value - x_start) // h)
+            if index >= m:
+                index = m - 1
+            frequency[index] += 1
+
+        bins = [x_start + i * h for i in range(m + 1)]
+        heights = [(freq / self.n) / h for freq in frequency]
+
+        chart = Chart("x", "p_i / h", "Гистограмма частот")
+
+        chart.add_histogram(bins[:-1], heights, width=h, label="Histogram")
+        chart.save_png("Histogram")
+
+    def print_data(self):
+        print("\n\n! DEBUG:\n")
+        for x, n, p in zip(self.xi, self.ni, self.pi):
+            print(f"{x} {n} {p}")
+
+def read_input(file_path: str, n: int = 20) -> list:
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"File {file_path} not found.")
+
+    with open(file_path, 'r') as file:
+        data = []
+        for line in file:
+            parts = line.strip().split()
+            for part in parts:
+                if part:
+                    data.append(float(part.replace(',', '.')))
+                    if len(data) == n:
+                        break
+            if len(data) == n:
+                break
+
+    if len(data) < n:
+        raise ValueError(f"Expected {n} numbers, but got {len(data)}.")
+
+    return data
+
+def main():
+    input_file = "input.txt"
+    try:
+        elements = read_input(input_file)
+    except Exception as e:
+        print(f"Error reading input: {e}")
+        return
+
+    runner = ProbabilityTheory(elements)
+
+    # Вариационный ряд
+    runner.get_var_values()
+
+    # Статистический ряд
+    runner.calculate_statistical_series()
+
+    # Экстремальные значения
+    runner.get_extreme_values()
+
+    # Размах
+    runner.get_selection_size()
+
+    # Числовые характеристики
+    runner.calculate_numeric_characteristics()
+
+    # Оценки математического ожидания и среднеквадратического отклонения
+    runner.discrepancy_calculation()
+
+    # Эмпирическая функция распределения и её график
+    runner.calculate_empiric_function()
+
+    # Полигон частот
+    runner.draw_frequency_polygon()
+
+    # Гистограмма
+    runner.draw_histogram()
+
+    # Отладочные данные
+    # runner.print_data()
+
+if __name__ == "__main__":
+    main()
