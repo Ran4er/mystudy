@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/1185818338_1428330249_2849958503.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_3890345977_1537232301.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_1207213209_2161839921.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_3890345977_571810622.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_1207213209_1987292195.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_3890345977_884228462.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_1207213209_949262696.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_3890345977_117506468.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_1207213209_2532286068.mp4'
+file 'file:C:/Users/Ra4el/Desktop/mystudy/3 TFCV/RGR_1/codeForExample/media/videos/NewtonBasinsVideo/480p15/partial_movie_files/NewtonBasinsZoom/624642324_3890345977_1952439680.mp4'

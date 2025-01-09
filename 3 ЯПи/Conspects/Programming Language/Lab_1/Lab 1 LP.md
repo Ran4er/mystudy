@@ -33,6 +33,8 @@ Function for realization:
 - Обратные кавычки позволяют использовать специальные символы в С-стиле (`\n`, `\t`).
 
 
+## Learn information (from book)
+
 ![[Pasted image 20241006161329.png]]
 
 
