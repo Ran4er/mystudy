@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My learning/Vk Education/Big Data/Introduction in Big Data.md",
+                "file": "My learning/SAD/ML/Linear models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction in Big Data"
+              "title": "Linear models"
             }
           }
         ]
@@ -164,28 +164,47 @@
   },
   "active": "c5fd473efcdee870",
   "lastOpenFiles": [
-    "MyNotes/Math analysis/1 Semester/§2. Множества и элементарные операции над множествами..md",
+    "My learning/SAD/ML/Introduction (base term).md",
+    "My learning/Vk Education/Big Data/Hadoop ecosystem and MapReduce.md",
+    "My learning/SAD/ML/Exercises/features.csv",
+    "My learning/SAD/ML/Exercises/rubrics.csv",
+    "My learning/SAD/ML/Exercises/organisations.csv",
+    "My learning/SAD/ML/Exercises/Лабораторная работа _Введение в ML_/rubrics.csv",
+    "My learning/SAD/ML/Exercises/Лабораторная работа _Введение в ML_/organisations.csv",
+    "My learning/SAD/ML/Exercises/Лабораторная работа _Введение в ML_/features.csv",
+    "My learning/SAD/ML/Exercises/Лабораторная работа _Введение в ML_",
+    "My learning/SAD/ML/Exercises/Лабораторная работа _Введение в ML_.zip",
+    "My learning/SAD/ML/Exercises/Не подтвержден 336142.crdownload",
+    "My learning/SAD/ML/Exercises/main.py",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126005351.png",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126171148.png",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126002650.png",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126004057.png",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126004718.png",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126004737.png",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126005514.png",
+    "My learning/Vk Education/Big Data/images/Pasted image 20250126001533.png",
+    "My learning/Vk Education/Big Data/Introduction in Big Data.md",
+    "My learning/SAD/ML/images/Pasted image 20250125150135.png",
+    "My learning/SAD/ML/images/Pasted image 20250125225106.png",
+    "Концепция MapReduce.md",
+    "My learning/SAD/ML/Linear models.md",
+    "My learning/SAD/README.md",
+    "MyNotes/Obsidian/Lecture_1/Управление знаниями в Obsidian.md",
     "MyNotes/Math analysis/1 Semester/§1. Логическая символика..md",
+    "MyNotes/Math analysis/1 Semester/§2. Множества и элементарные операции над множествами..md",
+    "Untitled.md",
+    "AssemblyStudy/Assembly.md",
     "MyNotes/Information to help with learning/Mnemonic technic.md",
     "Exercise 5 RGR_2.md",
     "Plugins for Intellij IDEA.md",
-    "My learning/Vk Education/Big Data/Introduction in Big Data.md",
-    "AssemblyStudy/Assembly.md",
     "gRPC.md",
-    "MyNotes/Information to help with learning/images/Mnemonic technic/Pasted image 20241018173743.png",
     "MyNotes/Список книг на прочтение/Первая выборка.md",
     "MyNotes/Список книг на прочтение/Welcome.md",
-    "MyNotes/Obsidian/Lecture_1/Управление знаниями в Obsidian.md",
     "Cover letter.md",
     "Очерки.md",
     "English Practice.md",
     "MyNotes/Untitled.md",
-    "MyNotes/Information to help with learning/images/Mnemonic technic",
-    "MyNotes/Information to help with learning/images",
-    "MyNotes/Information to help with learning",
-    "Мнемотехника.md",
-    "My learning/Vk Education/Big Data",
-    "My learning/Vk Education",
-    "My learning"
+    "Мнемотехника.md"
   ]
 }
