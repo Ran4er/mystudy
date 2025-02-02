@@ -25,17 +25,16 @@
             "id": "1ab3c3f5209e8cf9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Lab_2/Lab work 2.md",
-                "mode": "source",
-                "source": false
+                "file": "Lab_2/images/Pasted image 20250112152844.png"
               },
-              "icon": "lucide-file",
-              "title": "Lab work 2"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250112152844"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,15 +175,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9cc63ab81a97d807",
+  "active": "1ab3c3f5209e8cf9",
   "lastOpenFiles": [
-    "Lab_2/Lab work 2.md",
     "Lab_1/Lab work 1.md",
+    "Lab_2/images/Pasted image 20250112152844.png",
+    "Lab_2/Lab work 2.md",
+    "Cognitive_test/Pasted image 20250117234208.png",
+    "Cognitive_test/Pasted image 20250117234218.png",
+    "Cognitive_test/Pasted image 20250117234242.png",
+    "Cognitive_test/Pasted image 20250117234259.png",
+    "Cognitive_test/Cognitive test.md",
+    "Cognitive_test",
+    "Welcome.md",
     "Lab_2/images",
     "Lab_2",
     "Lab_1/Images/Pasted image 20241010121201.png",
     "Lab_1/Images/Pasted image 20241010120757.png",
-    "Welcome.md",
     "Lab_1/Images",
     "Lab_1"
   ]
