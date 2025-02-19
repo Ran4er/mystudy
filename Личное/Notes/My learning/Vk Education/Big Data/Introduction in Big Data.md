@@ -22,7 +22,7 @@
 
 Примерами служат: MySQL, PostgreSQL, Oracle DB
 
-#### NoSColumn-oriented DBMS
+#### NoColumn-oriented DBMS
 
 - Храним и читаем данные в колонках
 - Эффективнее работаем с большими таблицами
