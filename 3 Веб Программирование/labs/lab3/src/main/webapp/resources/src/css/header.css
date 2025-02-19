@@ -1,0 +1,22 @@
+header {
+    font-family: monospace;
+    background-color: var(--secondary-background);
+    overflow: hidden;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    color: var(--primary-text);
+    padding-left: 50px
+}
+
+header h2 {
+    font-size: 35px;
+    color: var(--secondary-text);
+    padding-left: 50px
+}
+
+header:hover h2::after {
+    color: var(--secondary-text)
+}

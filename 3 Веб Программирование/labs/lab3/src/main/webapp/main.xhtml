@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Главная | Хромов Даниил</title>
+</h:head>
+
+<h:body>
+    <header>
+        <h1>Хромов Даниил</h1>
+        <h2>P3218, Вариант 7896</h2>
+    </header>
+
+    <div class="main-site-body">
+        <div class="list-item">
+            <div class="card">
+                <div class="gradient-animation-box">
+          <span>
+            <canvas id="graph" width="390" height="390"></canvas>
+          </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="error-message" class="error">R не установлено</div>
+
+        <div class="list-item">
+            <h:form id="form">
+                <h5 class="label">X</h5>
+                <h:panelGrid columns="1">
+                    <p:inputNumber name="x" id="x" maxlength="10" value="#{hitResultBean.x}" decimalSeparator=".">
+                        <f:validateDoubleRange minimum="-5" maximum="3"/>
+                    </p:inputNumber>
+                </h:panelGrid>
+                <p:message for="y" display="text"/>
+
+                <h5 class="label">Y</h5>
+                <h:panelGrid columns="1">
+                    <p:inputNumber name="y" id="y" maxlength="10" value="#{hitResultBean.y}" decimalSeparator=".">
+                        <f:validateDoubleRange minimum="-3" maximum="5"/>
+                    </p:inputNumber>
+                </h:panelGrid>
+                <p:message for="y" display="text"/>
+
+                <h5 class="label">R</h5>
+                <h:panelGrid columns="1">
+                    <p:spinner id="r" value="#{hitResultBean.r}" styleClass="mytext" min="1.0" max="3.0" stepFactor="0.5">
+                        <p:ajax update="drawDotsPanel updateErrorMessageR"/>
+                    </p:spinner>
+                </h:panelGrid>
+
+                <div class="list-item">
+                    <div class="buttons-container">
+                        <p:commandButton ajax="true" id="submit" value="Отправить"
+                                         action="#{attemptRepository.addAttempt(hitResultBean)}"
+                                         update="table @form drawDotsPanel"/>
+                        <p:commandButton ajax="true" id="reset" value="Очистить"
+                                         action="#{attemptRepository.clearAttempts()}"
+                                         update="table @form drawDotsPanel"/>
+                        <h:button value="Начальная страница" styleClass="mybutton" outcome="index"/>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+
+        <p:dataTable id="table" value="#{attemptsList}" var="attempt" paginator="true"
+                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink}"
+                     rows="10" lazy="true" paginatorPosition="bottom" paginatorAlwaysVisible="true"
+                     style="width: 750px" styleClass="table">
+            <p:column headerText="ID">
+                <h:outputText value="#{attempt.id}"/>
+
+            </p:column>
+            <p:column headerText="X">
+                <h:outputText value="#{attempt.x}">
+                    <f:convertNumber type="number"
+                                     maxFractionDigits="3"
+                                     groupingUsed="false"/>
+                </h:outputText>
+            </p:column>
+            <p:column headerText="Y">
+                <h:outputText value="#{attempt.y}">
+                    <f:convertNumber type="number"
+                                     maxFractionDigits="3"
+                                     groupingUsed="false"/>
+                </h:outputText>
+            </p:column>
+            <p:column headerText="R">
+                <h:outputText value="#{attempt.r}"/>
+            </p:column>
+            <p:column headerText="Результат" styleClass="#{attempt.result ? 'result-yes' : 'result-no'}">
+                <h:outputText value="#{attempt.result ? 'Попал' : 'Не попал' }"/>
+            </p:column>
+            <p:column headerText="Отправлено">
+                <h:outputText value="#{attempt.createdAt}" >
+                    <f:convertDateTime pattern="dd.MM.yyyy HH:mm" />
+                </h:outputText>
+            </p:column>
+            <p:column headerText="Время выполнения">
+                <h:outputText value="#{attempt.executionTime}"/>
+            </p:column>
+        </p:dataTable>
+    </div>
+</h:body>
+
+<h:outputScript name="main.js" library="target"/>
+<h:panelGroup id="drawDotsPanel">
+    <h:outputScript>
+        window.drawDots(JSON.parse('#{attemptRepository.getPointsCoordinates()}'), JSON.parse('#{hitResultBean.r}'));
+    </h:outputScript>
+</h:panelGroup>
+<h:panelGroup id="updateErrorMessageR">
+    <h:outputScript>
+        window.updateErrorMessageR(JSON.parse('#{hitResultBean.r}'));
+    </h:outputScript>
+</h:panelGroup>
+<p:remoteCommand name="addAttempt" action="#{attemptRepository.addAttemptFromJsParams(hitResultBean.r)}" update="table"
+                 process="@this"/>
+<p:remoteCommand name="updateGraph" update="drawDotsPanel" process="@this"/>
+</html>

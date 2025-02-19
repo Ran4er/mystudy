@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="default" transaction-type="JTA">
+        <class>ru.ifmo.se.models.Attempt</class>
+
+        <properties>
+            <!-- database configurations -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/studs"/>
+            <property name="jakarta.persistence.jdbc.user" value="s373336"/>
+            <property name="jakarta.persistence.jdbc.password" value="7g2i6xlMYnAz5n4w"/>
+            <property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.PostgreSQLPlatform"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <property name="eclipselink.logging.level" value="FINEST"/>
+            <property name="eclipselink.logging.parameters" value="true"/>
+            <property name="eclipselink.connection.pool.max" value="100"/>
+            <property name="eclipselink.default-schema" value="public"/>
+        </properties>
+    </persistence-unit>
+</persistence>
