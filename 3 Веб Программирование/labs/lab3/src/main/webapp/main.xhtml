@@ -33,7 +33,7 @@
             <h:form id="form">
                 <h5 class="label">X</h5>
                 <h:panelGrid columns="1">
-                    <p:inputNumber name="x" id="x" maxlength="10" value="#{hitResultBean.x}" decimalSeparator=".">
+                    <p:inputNumber name="x" id="x" maxlength="10" value="#{attemptBean.x}" decimalSeparator=".">
                         <f:validateDoubleRange minimum="-5" maximum="3"/>
                     </p:inputNumber>
                 </h:panelGrid>
@@ -41,7 +41,7 @@
 
                 <h5 class="label">Y</h5>
                 <h:panelGrid columns="1">
-                    <p:inputNumber name="y" id="y" maxlength="10" value="#{hitResultBean.y}" decimalSeparator=".">
+                    <p:inputNumber name="y" id="y" maxlength="10" value="#{attemptBean.y}" decimalSeparator=".">
                         <f:validateDoubleRange minimum="-3" maximum="5"/>
                     </p:inputNumber>
                 </h:panelGrid>
@@ -49,7 +49,7 @@
 
                 <h5 class="label">R</h5>
                 <h:panelGrid columns="1">
-                    <p:spinner id="r" value="#{hitResultBean.r}" styleClass="mytext" min="1.0" max="3.0" stepFactor="0.5">
+                    <p:spinner id="r" value="#{attemptBean.r}" styleClass="mytext" min="1.0" max="3.0" stepFactor="0.5">
                         <p:ajax update="drawDotsPanel updateErrorMessageR"/>
                     </p:spinner>
                 </h:panelGrid>
@@ -57,7 +57,7 @@
                 <div class="list-item">
                     <div class="buttons-container">
                         <p:commandButton ajax="true" id="submit" value="Отправить"
-                                         action="#{attemptRepository.addAttempt(hitResultBean)}"
+                                         action="#{attemptRepository.addAttempt(attemptBean)}"
                                          update="table @form drawDotsPanel"/>
                         <p:commandButton ajax="true" id="reset" value="Очистить"
                                          action="#{attemptRepository.clearAttempts()}"
@@ -111,15 +111,15 @@
 <h:outputScript name="main.js" library="target"/>
 <h:panelGroup id="drawDotsPanel">
     <h:outputScript>
-        window.drawDots(JSON.parse('#{attemptRepository.getPointsCoordinates()}'), JSON.parse('#{hitResultBean.r}'));
+        window.drawDots(JSON.parse('#{attemptRepository.getPointsCoordinates()}'), JSON.parse('#{attemptBean.r}'));
     </h:outputScript>
 </h:panelGroup>
 <h:panelGroup id="updateErrorMessageR">
     <h:outputScript>
-        window.updateErrorMessageR(JSON.parse('#{hitResultBean.r}'));
+        window.updateErrorMessageR(JSON.parse('#{attemptBean.r}'));
     </h:outputScript>
 </h:panelGroup>
-<p:remoteCommand name="addAttempt" action="#{attemptRepository.addAttemptFromJsParams(hitResultBean.r)}" update="table"
+<p:remoteCommand name="addAttempt" action="#{attemptRepository.addAttemptFromJsParams(attemptBean.r)}" update="table"
                  process="@this"/>
 <p:remoteCommand name="updateGraph" update="drawDotsPanel" process="@this"/>
 </html>

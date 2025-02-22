@@ -42,6 +42,8 @@ export function drawCanvasGraph(coordinatesList, radioButtonR) {
         for (let i = 0; i < xList.length; i++) {
             const x = convertXToCanvasCoordinate(xList[i] * radioButtonR / rList[i], rList[i], rValue * radioButtonR / rList[i]);
             const y = convertYToCanvasCoordinate(yList[i] * radioButtonR / rList[i], rList[i], rValue * radioButtonR / rList[i]);
+            /*const x = convertXToCanvasCoordinate(xList[i], rList[i], rValue);
+            const y = convertYToCanvasCoordinate(yList[i], rList[i], rValue);*/
             if (hitList[i]) {
                 ctx.fillStyle = hitDotColor
             } else {
@@ -277,8 +279,12 @@ export function drawCanvasGraph(coordinatesList, radioButtonR) {
 
 
     canvas.onmousedown = function (event) {
+        //const r = parseFloat(radioButtonR);
         const x = convertXToRadiusOf(event.offsetX, rValue);
         const y = convertYToRadiusOf(event.offsetY, rValue);
+
+        console.log("Mouse coordinates:", event.offsetX, event.offsetY);
+        console.log("Converted coordinates:", x, y);
 
         addAttempt(
             [
@@ -293,9 +299,11 @@ export function drawCanvasGraph(coordinatesList, radioButtonR) {
 
     function convertXToRadiusOf(x, r) {
         return ((x - width / 2) / rValue) * r;
+        //return ((x - width / 2) / (width / 2.5)) * r;
     }
 
     function convertYToRadiusOf(y, r) {
         return ((height - y - height / 2) / rValue) * r;
+        //return ((height - y - height / 2) / (height / 2.5)) * r;
     }
 }

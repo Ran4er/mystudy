@@ -6,14 +6,14 @@ import jakarta.inject.Named;
 import org.primefaces.model.FilterMeta;
 import org.primefaces.model.LazyDataModel;
 import org.primefaces.model.SortMeta;
-import ru.ifmo.se.models.Attempt;
+import ru.ifmo.se.models.AttemptEntity;
 
 import java.util.List;
 import java.util.Map;
 
 @Named("attemptsList")
 @ApplicationScoped
-public class HitResultDataModel extends LazyDataModel<Attempt> {
+public class HitResultDataModel extends LazyDataModel<AttemptEntity> {
 
     @Inject
     private HitResultRepository service;
@@ -24,7 +24,7 @@ public class HitResultDataModel extends LazyDataModel<Attempt> {
     }
 
     @Override
-    public List<Attempt> load(int first, int pageSize, Map<String, SortMeta> map, Map<String, FilterMeta> map1) {
+    public List<AttemptEntity> load(int first, int pageSize, Map<String, SortMeta> map, Map<String, FilterMeta> map1) {
         return service.getAttemptsList(first, pageSize);
     }
 
