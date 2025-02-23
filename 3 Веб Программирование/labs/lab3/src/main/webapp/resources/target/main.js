@@ -808,8 +808,18 @@ function drawCanvasGraph(coordinatesList, radioButtonR) {
 
     function drawDots() {
         for (let i = 0; i < xList.length; i++) {
-            const x = convertXToCanvasCoordinate(xList[i] * radioButtonR / rList[i], rList[i], rValue * radioButtonR / rList[i]);
-            const y = convertYToCanvasCoordinate(yList[i] * radioButtonR / rList[i], rList[i], rValue * radioButtonR / rList[i]);
+            //const x = convertXToCanvasCoordinate(xList[i] * radioButtonR / rList[i], rList[i], rValue * radioButtonR / rList[i]);
+            //const y = convertYToCanvasCoordinate(yList[i] * radioButtonR / rList[i], rList[i], rValue * radioButtonR / rList[i]);
+            const x = convertXToCanvasCoordinate(
+                xList[i] * radioButtonR / rList[i],
+                radioButtonR,
+                rValue * radioButtonR / rList[i]
+            );
+            const y = convertYToCanvasCoordinate(
+                yList[i] * radioButtonR / rList[i],
+                radioButtonR,
+                rValue * radioButtonR / rList[i]
+            );
             if (hitList[i]) {
                 ctx.fillStyle = hitDotColor
             } else {
@@ -1045,14 +1055,14 @@ function drawCanvasGraph(coordinatesList, radioButtonR) {
 
 
     canvas.onmousedown = function (event) {
-        const x = convertXToRadiusOf(event.offsetX, rValue);
-        const y = convertYToRadiusOf(event.offsetY, rValue);
+        const x = convertXToRadiusOf(event.offsetX, radioButtonR);
+        const y = convertYToRadiusOf(event.offsetY, radioButtonR);
 
         addAttempt(
             [
                 { name: "x", value: x.toString() },
                 { name: "y", value: y.toString() },
-                { name: "r", value: rValue.toString() }
+                { name: "r", value: radioButtonR.toString() }
             ]
         )
 
@@ -1122,6 +1132,15 @@ var update = injectStylesIntoStyleTag_default()(main/* default */.A, options);
 
 document.addEventListener('DOMContentLoaded', function() {
     drawCanvasGraph([], 1);
+
+    const rSpinner = document.querySelector('#r');
+    if (rSpinner) {
+        rSpinner.addEventListener('change', function() {
+            const newR = parseFloat(rSpinner.value);
+            drawCanvasGraph([], newR);
+        });
+    }
+
 })
 
 window.drawDots = drawCanvasGraph
