@@ -111,7 +111,7 @@
 <h:outputScript name="main.js" library="target"/>
 <h:panelGroup id="drawDotsPanel">
     <h:outputScript>
-        window.drawDots(JSON.parse('#{attemptRepository.getPointsCoordinates()}'), JSON.parse('#{attemptBean.r}'));
+        window.drawDots(JSON.parse('#{attemptRepository.getPointsCoordinates()}'), JSON.parse('#{attemptBean.r}')); //
     </h:outputScript>
 </h:panelGroup>
 <h:panelGroup id="updateErrorMessageR">

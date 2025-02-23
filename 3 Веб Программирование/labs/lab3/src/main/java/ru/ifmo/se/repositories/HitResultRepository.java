@@ -47,8 +47,9 @@ public class HitResultRepository implements Serializable {
     public AttemptEntity addAttempt(AttemptBean attemptBean) {
         areaCheck.checkHit(attemptBean);
         AttemptEntity attemptEntity = attemptBean.toEntity();
-        entityManager.persist(attemptEntity);
-        entityManager.flush();
+        entityManager.merge(attemptEntity);
+        //entityManager.persist(attemptEntity);
+        //entityManager.flush();
         //entityManager.merge(attemptBean.toEntity());
         return attemptEntity;
     }
@@ -70,6 +71,8 @@ public class HitResultRepository implements Serializable {
             double x = Double.parseDouble(params.get("x"));
             double y = Double.parseDouble(params.get("y"));
             double graphR = Double.parseDouble(params.get("r"));
+
+            System.out.println("Received R value: " + currentR + " graphR: " + graphR);
 
             AttemptBean attemptBean = new AttemptBean(x / graphR * currentR, y / graphR * currentR, currentR);
             addAttempt(attemptBean);
