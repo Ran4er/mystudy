@@ -1,0 +1,14 @@
+# Подключение к WildFly с помощью CLI
+connect
+
+# Добавление драйвера для PostgreSQL
+module add --name=org.postgresql --resources=/path/to/postgresql-42.6.2.jar --dependencies=javax.api,javax.transaction.api
+
+# Настройка DataSource для PostgreSQL
+data-source add --name=PostgreSQLDS --driver-name=postgresql --jndi-name=java:jboss/datasources/PostgreSQLDS --connection-url=jdbc:postgresql://localhost:5432/lab3 --user-name=s373336 --password=7g2i6xlMYnAz5n4w --enabled=true --use-java-context=true
+
+# Проверка, что DataSource добавлен успешно
+data-source check --name=PostgreSQLDS
+
+# Завершаем сессию
+reload
