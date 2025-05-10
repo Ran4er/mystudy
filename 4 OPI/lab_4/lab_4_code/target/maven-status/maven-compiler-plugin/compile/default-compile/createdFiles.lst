@@ -1,0 +1,9 @@
+point/PointBean.class
+bd/PointsBDManager.class
+mbeans/AverageClickInterval.class
+point/Point.class
+mbeans/AverageClickIntervalMBean.class
+mbeans/Count.class
+mbeans/MBeanSessionLocalAgent.class
+area/AreaChecker.class
+mbeans/CountMBean.class
