@@ -1,27 +1,8 @@
-2025-05-09 07:48:01,308 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
-2025-05-09 07:48:01,310 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2025-05-09 07:48:01,311 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
-2025-05-09 07:48:01,314 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
-2025-05-09 07:48:01,315 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
-2025-05-09 07:48:01,316 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
-2025-05-09 07:48:01,317 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 90) WFLYUT0022: Unregistered web context: '/web_3' from server 'default-server'
-2025-05-09 07:48:01,320 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
-2025-05-09 07:48:01,324 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 97) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
-2025-05-09 07:48:01,335 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 97) WFLYJPA0004: Stopping Persistence Unit Service 'web_3.war#WebLab'
-2025-05-09 07:48:01,335 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2025-05-09 07:48:01,336 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
-2025-05-09 07:48:01,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
-2025-05-09 07:48:01,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
-2025-05-09 07:48:01,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:27890
-2025-05-09 07:48:01,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:27488
-2025-05-09 07:48:01,337 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.2.19.Final stopping
-2025-05-09 07:48:01,348 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment web_3.war (runtime-name: web_3.war) in 35ms
-2025-05-09 07:48:01,350 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) stopped in 37ms
-2025-05-09 10:36:16,690 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.2.Final
-2025-05-09 10:36:17,767 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
-2025-05-09 10:36:17,780 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
-2025-05-09 10:36:17,983 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) starting
-2025-05-09 10:36:17,987 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+2025-05-15 14:26:56,526 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.2.Final
+2025-05-15 14:26:56,902 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2025-05-15 14:26:56,907 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-05-15 14:26:56,980 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) starting
+2025-05-15 14:26:56,981 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
 	[Standalone] = 
 	com.sun.management.jmxremote = true
 	com.sun.management.jmxremote.authenticate = false
@@ -39,7 +20,7 @@
 	java.net.preferIPv4Stack = true
 	java.rmi.server.hostname = localhost
 	java.runtime.name = OpenJDK Runtime Environment
-	java.runtime.version = 21.0.6+7
+	java.runtime.version = 21.0.7+6
 	java.security.manager = allow
 	java.specification.name = Java Platform API Specification
 	java.specification.vendor = Oracle Corporation
@@ -48,9 +29,9 @@
 	java.vendor = Red Hat, Inc.
 	java.vendor.url = https://www.redhat.com/
 	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=java-21-openjdk&version=40
-	java.vendor.version = (Red_Hat-21.0.6.0.7-1)
-	java.version = 21.0.6
-	java.version.date = 2025-01-21
+	java.vendor.version = (Red_Hat-21.0.7.0.6-1)
+	java.version = 21.0.7
+	java.version.date = 2025-04-15
 	java.vm.compressedOopsMode = 32-bit
 	java.vm.info = mixed mode, sharing
 	java.vm.name = OpenJDK 64-Bit Server VM
@@ -58,7 +39,7 @@
 	java.vm.specification.vendor = Oracle Corporation
 	java.vm.specification.version = 21
 	java.vm.vendor = Red Hat, Inc.
-	java.vm.version = 21.0.6+7
+	java.vm.version = 21.0.7+6
 	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
 	jboss.bind.address = 0.0.0.0
 	jboss.bind.address.management = 0.0.0.0
@@ -86,7 +67,7 @@
 	org.jboss.resolver.warning = true
 	os.arch = amd64
 	os.name = Linux
-	os.version = 6.13.10-200.fc41.x86_64
+	os.version = 6.14.5-200.fc41.x86_64
 	path.separator = :
 	stderr.encoding = UTF-8
 	stdout.encoding = UTF-8
@@ -104,973 +85,140 @@
 	user.language = en
 	user.name = ru6ik
 	user.timezone = Europe/Moscow
-2025-05-09 10:36:17,992 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties 
-2025-05-09 10:36:18,950 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.19.1.Final
-2025-05-09 10:36:26,689 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 33) WFLYDR0001: Content added at location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/3e/e2f39fdadc9e74e87bb5dd8d19a79466fa3d60/content
-2025-05-09 10:36:26,715 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2025-05-09 10:36:26,725 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.7.Final
-2025-05-09 10:36:26,730 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.7.Final
-2025-05-09 10:36:26,738 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.1.Final
-2025-05-09 10:36:26,738 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
-2025-05-09 10:36:26,739 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
-2025-05-09 10:36:26,739 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
-2025-05-09 10:36:26,741 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
-2025-05-09 10:36:26,743 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
-2025-05-09 10:36:26,743 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
-2025-05-09 10:36:26,745 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2025-05-09 10:36:26,745 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
-2025-05-09 10:36:26,747 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
-2025-05-09 10:36:26,747 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
-2025-05-09 10:36:26,747 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
-2025-05-09 10:36:26,751 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
-2025-05-09 10:36:26,754 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
-2025-05-09 10:36:26,762 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
-2025-05-09 10:36:26,766 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
-2025-05-09 10:36:26,775 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
-2025-05-09 10:36:26,776 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2025-05-09 10:36:26,783 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
-2025-05-09 10:36:26,783 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.2.19.Final starting
-2025-05-09 10:36:26,787 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = postgresql
-2025-05-09 10:36:26,792 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.25.Final
-2025-05-09 10:36:26,800 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY00023: KeyStore file '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore' does not exist. Used blank.
-2025-05-09 10:36:26,806 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
-2025-05-09 10:36:26,826 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2025-05-09 10:36:26,829 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
-2025-05-09 10:36:26,829 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
-2025-05-09 10:36:26,834 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
-2025-05-09 10:36:26,835 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) Queuing requests.
-2025-05-09 10:36:26,836 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
-2025-05-09 10:36:26,868 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:27488
-2025-05-09 10:36:26,896 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2025-05-09 10:36:26,928 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:27890
-2025-05-09 10:36:26,944 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2025-05-09 10:36:27,038 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
-2025-05-09 10:36:27,042 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/deployments
-2025-05-09 10:36:27,047 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "web_3.war" (runtime-name: "web_3.war")
-2025-05-09 10:36:27,095 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.5.0.Final (Apache CXF 3.4.10) 
-2025-05-09 10:36:28,030 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for WebLab
-2025-05-09 10:36:28,108 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'web_3.war#WebLab'
-2025-05-09 10:36:28,197 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-05-09 10:36:28.189--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-2025-05-09 10:36:28,245 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:36:28.244--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,245 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:36:28,246 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:36:28.245--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,246 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:36:28,246 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.246--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class point.Point] is set to [FIELD].
-2025-05-09 10:36:28,252 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:36:28.252--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,252 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:36:28,252 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:36:28.252--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,252 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:36:28,253 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:36:28.253--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,253 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:36:28,253 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:36:28.253--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,253 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:36:28,254 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.254--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class point.Point] is being defaulted to: Point.
-2025-05-09 10:36:28,258 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.258--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
-2025-05-09 10:36:28,259 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.258--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
-2025-05-09 10:36:28,259 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.259--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
-2025-05-09 10:36:28,259 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.259--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [scriptTime] is being defaulted to: SCRIPTTIME.
-2025-05-09 10:36:28,259 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.259--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
-2025-05-09 10:36:28,259 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:36:28.259--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,260 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:36:28,260 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:36:28.26--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:36:28,260 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:36:28,260 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.26--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [time] is being defaulted to: TIME.
-2025-05-09 10:36:28,260 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:36:28.26--ServerSession(184781177)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [status] is being defaulted to: STATUS.
-2025-05-09 10:36:28,310 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment web_3.war
-2025-05-09 10:36:28,391 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 7.0.2.Final
-2025-05-09 10:36:28,576 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-8) No shutdown hook registered: Please call close() manually on application shutdown.
-2025-05-09 10:36:28,577 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-8) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=web_3.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@69d269ec, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=fedora, jaeger.version=Java-1.6.0, ip=172.20.10.14}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
-2025-05-09 10:36:28,697 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
-2025-05-09 10:36:28,710 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 4.0.3 (Final)
-2025-05-09 10:36:28,735 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Triskaidekaphobia' 13.0.10.Final
-2025-05-09 10:36:28,743 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
-2025-05-09 10:36:28,786 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
-2025-05-09 10:36:28,865 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-4) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
-2025-05-09 10:36:28,985 INFO  [org.infinispan.CONFIG] (MSC service thread 1-5) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2025-05-09 10:36:28,986 INFO  [org.infinispan.CONFIG] (MSC service thread 1-5) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2025-05-09 10:36:28,998 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
-2025-05-09 10:36:29,001 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
-2025-05-09 10:36:29,233 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: moxy: 2025-05-09 10:36:29.232--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@717546b6
-2025-05-09 10:36:29,287 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Warning]: transaction: 2025-05-09 10:36:29.287--ServerSession(184781177)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--PersistenceUnitInfo WebLab has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
-2025-05-09 10:36:29,288 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Info]: 2025-05-09 10:36:29.288--ServerSession(184781177)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--EclipseLink, version: Eclipse Persistence Services - 3.0.2.v202107160933
-2025-05-09 10:36:29,358 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: connection: 2025-05-09 10:36:29.358--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-2025-05-09 10:36:29,361 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: connection: 2025-05-09 10:36:29.361--ServerSession(184781177)--Connection(1825813480)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--connecting(DatabaseLogin(
-2025-05-09 10:36:29,362 INFO  [stdout] (ServerService Thread Pool -- 86) 	platform=>PostgreSQLPlatform
-2025-05-09 10:36:29,362 INFO  [stdout] (ServerService Thread Pool -- 86) 	user name=> "postgres"
-2025-05-09 10:36:29,362 INFO  [stdout] (ServerService Thread Pool -- 86) 	datasource URL=> "jdbc:postgresql://localhost:5432/studs"
-2025-05-09 10:36:29,362 INFO  [stdout] (ServerService Thread Pool -- 86) ))
-2025-05-09 10:36:29,368 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Config]: connection: 2025-05-09 10:36:29.368--ServerSession(184781177)--Connection(1410260947)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--Connected: jdbc:postgresql://localhost:5432/studs
-2025-05-09 10:36:29,368 INFO  [stdout] (ServerService Thread Pool -- 86) 	User: postgres
-2025-05-09 10:36:29,368 INFO  [stdout] (ServerService Thread Pool -- 86) 	Database: PostgreSQL  Version: 16.8
-2025-05-09 10:36:29,368 INFO  [stdout] (ServerService Thread Pool -- 86) 	Driver: PostgreSQL JDBC Driver  Version: 42.6.0
-2025-05-09 10:36:29,389 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: connection: 2025-05-09 10:36:29.389--ServerSession(184781177)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--/vfs:/content/web_3.war/WEB-INF/classes/_WebLab login successful
-2025-05-09 10:36:29,411 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: sql: 2025-05-09 10:36:29.411--ServerSession(184781177)--Connection(1410260947)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
-2025-05-09 10:36:29,477 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: sql: 2025-05-09 10:36:29.477--ServerSession(184781177)--Connection(1410260947)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 10:36:29,488 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: moxy: 2025-05-09 10:36:29.488--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@f34fb7a
-2025-05-09 10:36:29,490 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: sql: 2025-05-09 10:36:29.49--ServerSession(184781177)--Connection(1410260947)--Thread(Thread[#230,ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 10:36:29,495 INFO  [stdout] (ServerService Thread Pool -- 86) CountMBean.logSimpleAgentStarted
-2025-05-09 10:36:29,495 INFO  [stdout] (ServerService Thread Pool -- 86) AverageClickInterval.logSimpleAgentStarted
-2025-05-09 10:36:29,515 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) Initializing Mojarra 3.0.0.SP04 for context '/web_3'
-2025-05-09 10:36:29,867 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) JSF1057: The resource referred to by from-view-id, 'main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 10:36:29,867 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 10:36:29,869 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 10:36:29,869 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) JSF1058: The resource referred to by to-view-id, 'main.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 10:36:29,869 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 10:36:29,869 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 10:36:30,028 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 86) Running on PrimeFaces 12.0.0
-2025-05-09 10:36:30,040 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0021: Registered web context: '/web_3' for server 'default-server'
-2025-05-09 10:36:30,067 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "web_3.war" (runtime-name : "web_3.war")
-2025-05-09 10:36:30,091 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2025-05-09 10:36:30,093 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) started in 14191ms - Started 501 of 701 services (341 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
-2025-05-09 10:36:30,094 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://0.0.0.0:27891/management
-2025-05-09 10:36:30,094 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://0.0.0.0:27891
-2025-05-09 10:38:40,905 ERROR [stderr] (Attach Listener) WARNING: A Java agent has been loaded dynamically (/home/ru6ik/Downloads/visualvm_22/visualvm/lib/jfluid-server-15.jar)
-2025-05-09 10:38:40,906 ERROR [stderr] (Attach Listener) WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-2025-05-09 10:38:40,907 ERROR [stderr] (Attach Listener) WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-2025-05-09 10:38:40,907 ERROR [stderr] (Attach Listener) WARNING: Dynamic loading of agents will be disallowed by default in a future release
-2025-05-09 10:38:40,933 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Waiting for connection on port 5140 (Protocol version: 21)
-2025-05-09 10:38:40,990 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Established connection with the tool
-2025-05-09 10:38:41,303 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Local accelerated session
-2025-05-09 10:39:45,776 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.logmanager@2.1.18.Final//org.jboss.logmanager.Logger.isLoggable(Unknown Source)
-	at org.jboss.modules.log.JDKModuleLogger.trace(Unknown Source)
-	at org.jboss.modules.ModuleClassLoader.findClass(Unknown Source)
-	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(Unknown Source)
-	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(Unknown Source)
-	at org.jboss.modules.ConcurrentClassLoader.loadClass(Unknown Source)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 12 more
-
-2025-05-09 10:39:45,778 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:45,779 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:45,779 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:45,780 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:45,781 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:45,782 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:46,809 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:46,811 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:47,704 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Connection with agent closed
-2025-05-09 10:39:47,844 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:47,845 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:48,791 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:48,793 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:49,702 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:49,704 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:49,900 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:49,901 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,078 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,080 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,259 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,261 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,415 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,417 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,580 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,581 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,734 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,736 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,901 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:50,902 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:53,523 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:53,524 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:53,687 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:53,688 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:53,868 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:53,870 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:54,033 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:54,034 ERROR [org.xnio.listener] (default Accept) XNIO001007: A channel event listener threw an exception: java.lang.NoClassDefFoundError: org/graalvm/visualvm/lib/jfluid/server/ProfilerRuntimeCPUFullInstr
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServer.accept(NioTcpServer.java:415)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.handleReady(QueuedNioTcpServer2.java:149)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.QueuedNioTcpServer2.lambda$new$1(QueuedNioTcpServer2.java:58)
-	at org.jboss.xnio@3.8.7.Final//org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.NioTcpServerHandle.handleReady(NioTcpServerHandle.java:65)
-	at org.jboss.xnio.nio@3.8.7.Final//org.xnio.nio.WorkerThread.run(WorkerThread.java:591)
-Caused by: java.lang.ClassNotFoundException: org.graalvm.visualvm.lib.jfluid.server.ProfilerRuntimeCPUFullInstr from [Module "org.jboss.logmanager" version 2.1.18.Final from local module loader @b2c5e07 (finder: local module finder @5812f68b (roots: /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules,/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules/system/layers/base))]
-	... 6 more
-
-2025-05-09 10:39:56,649 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
-2025-05-09 10:39:56,654 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2025-05-09 10:39:56,667 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
-2025-05-09 10:39:56,682 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
-2025-05-09 10:39:56,690 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/web_3' from server 'default-server'
-2025-05-09 10:39:56,701 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
-2025-05-09 10:39:56,705 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
-2025-05-09 10:39:56,718 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
-2025-05-09 10:39:56,765 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 92) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
-2025-05-09 10:39:56,904 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 92) WFLYJPA0004: Stopping Persistence Unit Service 'web_3.war#WebLab'
-2025-05-09 10:39:56,905 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2025-05-09 10:39:56,907 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
-2025-05-09 10:39:56,909 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
-2025-05-09 10:39:56,910 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:27890
-2025-05-09 10:39:56,911 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
-2025-05-09 10:39:56,912 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:27488
-2025-05-09 10:39:56,914 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.2.19.Final stopping
-2025-05-09 10:39:56,958 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment web_3.war (runtime-name: web_3.war) in 275ms
-2025-05-09 10:39:56,967 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) stopped in 279ms
-2025-05-09 10:40:05,614 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.2.Final
-2025-05-09 10:40:06,460 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
-2025-05-09 10:40:06,472 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
-2025-05-09 10:40:06,639 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) starting
-2025-05-09 10:40:06,642 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
-	[Standalone] = 
-	com.sun.management.jmxremote = true
-	com.sun.management.jmxremote.authenticate = false
-	com.sun.management.jmxremote.port = 27891
-	com.sun.management.jmxremote.rmi.port = 27891
-	com.sun.management.jmxremote.ssl = false
-	file.encoding = UTF-8
-	file.separator = /
-	java.awt.headless = true
-	java.class.path = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/jboss-modules.jar
-	java.class.version = 65.0
-	java.home = /usr/lib/jvm/java-21-openjdk
-	java.io.tmpdir = /tmp
-	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	java.net.preferIPv4Stack = true
-	java.rmi.server.hostname = localhost
-	java.runtime.name = OpenJDK Runtime Environment
-	java.runtime.version = 21.0.6+7
-	java.security.manager = allow
-	java.specification.name = Java Platform API Specification
-	java.specification.vendor = Oracle Corporation
-	java.specification.version = 21
-	java.util.logging.manager = org.jboss.logmanager.LogManager
-	java.vendor = Red Hat, Inc.
-	java.vendor.url = https://www.redhat.com/
-	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=java-21-openjdk&version=40
-	java.vendor.version = (Red_Hat-21.0.6.0.7-1)
-	java.version = 21.0.6
-	java.version.date = 2025-01-21
-	java.vm.compressedOopsMode = 32-bit
-	java.vm.info = mixed mode, sharing
-	java.vm.name = OpenJDK 64-Bit Server VM
-	java.vm.specification.name = Java Virtual Machine Specification
-	java.vm.specification.vendor = Oracle Corporation
-	java.vm.specification.version = 21
-	java.vm.vendor = Red Hat, Inc.
-	java.vm.version = 21.0.6+7
-	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
-	jboss.bind.address = 0.0.0.0
-	jboss.bind.address.management = 0.0.0.0
-	jboss.home.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly
-	jboss.host.name = fedora
-	jboss.modules.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules
-	jboss.modules.system.pkgs = org.jboss.byteman
-	jboss.node.name = fedora
-	jboss.qualified.host.name = fedora
-	jboss.server.base.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone
-	jboss.server.config.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration
-	jboss.server.data.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data
-	jboss.server.deploy.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content
-	jboss.server.log.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log
-	jboss.server.name = fedora
-	jboss.server.persist.config = true
-	jboss.server.temp.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/tmp
-	jdk.debug = release
-	line.separator = 
-
-	logging.configuration = file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties
-	module.path = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules
-	native.encoding = UTF-8
-	org.jboss.boot.log.file = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log
-	org.jboss.resolver.warning = true
-	os.arch = amd64
-	os.name = Linux
-	os.version = 6.13.10-200.fc41.x86_64
-	path.separator = :
-	stderr.encoding = UTF-8
-	stdout.encoding = UTF-8
-	sun.arch.data.model = 64
-	sun.boot.library.path = /usr/lib/jvm/java-21-openjdk/lib
-	sun.cpu.endian = little
-	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/jboss-modules.jar -mp /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly -Djboss.server.base.dir=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone -b 0.0.0.0 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.port=27891 -Dcom.sun.management.jmxremote.rmi.port=27891 -Djava.rmi.server.hostname=localhost -Djboss.bind.address.management=0.0.0.0 -Djboss.bind.address=0.0.0.0
-	sun.java.launcher = SUN_STANDARD
-	sun.jnu.encoding = UTF-8
-	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
-	user.country = US
-	user.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly
-	user.home = /home/ru6ik
-	user.language = en
-	user.name = ru6ik
-	user.timezone = Europe/Moscow
-2025-05-09 10:40:06,645 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties 
-2025-05-09 10:40:07,462 INFO  [org.wildfly.security] (ServerService Thread Pool -- 4) ELY00001: WildFly Elytron version 1.19.1.Final
-2025-05-09 10:40:15,940 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 37) WFLYDR0001: Content added at location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/ce/d10949c49d880464397c9e2e18ed979d6d25f7/content
-2025-05-09 10:40:15,964 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2025-05-09 10:40:15,972 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.7.Final
-2025-05-09 10:40:15,976 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.7.Final
-2025-05-09 10:40:15,986 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
-2025-05-09 10:40:15,987 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.1.Final
-2025-05-09 10:40:15,987 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
-2025-05-09 10:40:15,989 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
-2025-05-09 10:40:15,989 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
-2025-05-09 10:40:15,991 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
-2025-05-09 10:40:15,992 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
-2025-05-09 10:40:15,994 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
-2025-05-09 10:40:15,995 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2025-05-09 10:40:15,999 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
-2025-05-09 10:40:15,999 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
-2025-05-09 10:40:16,001 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
-2025-05-09 10:40:16,003 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
-2025-05-09 10:40:16,006 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
-2025-05-09 10:40:16,010 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
-2025-05-09 10:40:16,019 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
-2025-05-09 10:40:16,025 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.25.Final
-2025-05-09 10:40:16,026 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
-2025-05-09 10:40:16,031 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.2.19.Final starting
-2025-05-09 10:40:16,031 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
-2025-05-09 10:40:16,032 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = postgresql
-2025-05-09 10:40:16,036 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2025-05-09 10:40:16,051 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY00023: KeyStore file '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore' does not exist. Used blank.
-2025-05-09 10:40:16,060 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
-2025-05-09 10:40:16,065 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2025-05-09 10:40:16,072 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
-2025-05-09 10:40:16,072 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
-2025-05-09 10:40:16,073 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) Queuing requests.
-2025-05-09 10:40:16,072 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
-2025-05-09 10:40:16,075 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
-2025-05-09 10:40:16,125 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:27488
-2025-05-09 10:40:16,155 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2025-05-09 10:40:16,176 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:27890
-2025-05-09 10:40:16,200 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2025-05-09 10:40:16,242 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
-2025-05-09 10:40:16,242 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/deployments
-2025-05-09 10:40:16,247 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "web_3.war" (runtime-name: "web_3.war")
-2025-05-09 10:40:16,268 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.5.0.Final (Apache CXF 3.4.10) 
-2025-05-09 10:40:17,267 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for WebLab
-2025-05-09 10:40:17,338 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'web_3.war#WebLab'
-2025-05-09 10:40:17,428 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-05-09 10:40:17.42--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-2025-05-09 10:40:17,478 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:40:17.477--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,478 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:40:17,479 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:40:17.478--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,479 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:40:17,479 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.479--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class point.Point] is set to [FIELD].
-2025-05-09 10:40:17,486 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:40:17.486--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,486 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:40:17,486 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:40:17.486--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,487 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:40:17,487 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:40:17.487--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,487 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:40:17,487 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:40:17.487--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,488 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:40:17,488 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.488--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class point.Point] is being defaulted to: Point.
-2025-05-09 10:40:17,493 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.493--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
-2025-05-09 10:40:17,494 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.494--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
-2025-05-09 10:40:17,494 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.494--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
-2025-05-09 10:40:17,494 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.494--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [scriptTime] is being defaulted to: SCRIPTTIME.
-2025-05-09 10:40:17,494 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.494--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
-2025-05-09 10:40:17,495 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 10:40:17.495--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,495 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 10:40:17,495 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 10:40:17.495--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 10:40:17,495 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 10:40:17,496 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.495--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [time] is being defaulted to: TIME.
-2025-05-09 10:40:17,496 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 10:40:17.496--ServerSession(565181847)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [status] is being defaulted to: STATUS.
-2025-05-09 10:40:17,534 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment web_3.war
-2025-05-09 10:40:17,596 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 7.0.2.Final
-2025-05-09 10:40:17,766 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-2) No shutdown hook registered: Please call close() manually on application shutdown.
-2025-05-09 10:40:17,768 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-2) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=web_3.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@77a78c76, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=fedora, jaeger.version=Java-1.6.0, ip=172.20.10.14}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
-2025-05-09 10:40:17,892 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
-2025-05-09 10:40:17,903 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 4.0.3 (Final)
-2025-05-09 10:40:17,913 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Triskaidekaphobia' 13.0.10.Final
-2025-05-09 10:40:17,939 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
-2025-05-09 10:40:17,960 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
-2025-05-09 10:40:18,077 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
-2025-05-09 10:40:18,174 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2025-05-09 10:40:18,175 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2025-05-09 10:40:18,181 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
-2025-05-09 10:40:18,183 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
-2025-05-09 10:40:18,426 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: moxy: 2025-05-09 10:40:18.426--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@14f6ba8b
-2025-05-09 10:40:18,470 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Warning]: transaction: 2025-05-09 10:40:18.47--ServerSession(565181847)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--PersistenceUnitInfo WebLab has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
-2025-05-09 10:40:18,472 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Info]: 2025-05-09 10:40:18.471--ServerSession(565181847)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--EclipseLink, version: Eclipse Persistence Services - 3.0.2.v202107160933
-2025-05-09 10:40:18,549 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: connection: 2025-05-09 10:40:18.549--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-2025-05-09 10:40:18,553 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: connection: 2025-05-09 10:40:18.553--ServerSession(565181847)--Connection(539841623)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--connecting(DatabaseLogin(
-2025-05-09 10:40:18,553 INFO  [stdout] (ServerService Thread Pool -- 85) 	platform=>PostgreSQLPlatform
-2025-05-09 10:40:18,553 INFO  [stdout] (ServerService Thread Pool -- 85) 	user name=> "postgres"
-2025-05-09 10:40:18,553 INFO  [stdout] (ServerService Thread Pool -- 85) 	datasource URL=> "jdbc:postgresql://localhost:5432/studs"
-2025-05-09 10:40:18,553 INFO  [stdout] (ServerService Thread Pool -- 85) ))
-2025-05-09 10:40:18,561 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Config]: connection: 2025-05-09 10:40:18.561--ServerSession(565181847)--Connection(1843522089)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--Connected: jdbc:postgresql://localhost:5432/studs
-2025-05-09 10:40:18,561 INFO  [stdout] (ServerService Thread Pool -- 85) 	User: postgres
-2025-05-09 10:40:18,561 INFO  [stdout] (ServerService Thread Pool -- 85) 	Database: PostgreSQL  Version: 16.8
-2025-05-09 10:40:18,562 INFO  [stdout] (ServerService Thread Pool -- 85) 	Driver: PostgreSQL JDBC Driver  Version: 42.6.0
-2025-05-09 10:40:18,587 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: connection: 2025-05-09 10:40:18.587--ServerSession(565181847)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--/vfs:/content/web_3.war/WEB-INF/classes/_WebLab login successful
-2025-05-09 10:40:18,607 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: sql: 2025-05-09 10:40:18.607--ServerSession(565181847)--Connection(1843522089)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
-2025-05-09 10:40:18,674 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: sql: 2025-05-09 10:40:18.674--ServerSession(565181847)--Connection(1843522089)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 10:40:18,684 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: moxy: 2025-05-09 10:40:18.684--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@19a11f0d
-2025-05-09 10:40:18,685 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: sql: 2025-05-09 10:40:18.685--ServerSession(565181847)--Connection(1843522089)--Thread(Thread[#230,ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 10:40:18,690 INFO  [stdout] (ServerService Thread Pool -- 85) CountMBean.logSimpleAgentStarted
-2025-05-09 10:40:18,690 INFO  [stdout] (ServerService Thread Pool -- 85) AverageClickInterval.logSimpleAgentStarted
-2025-05-09 10:40:18,710 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) Initializing Mojarra 3.0.0.SP04 for context '/web_3'
-2025-05-09 10:40:19,064 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) JSF1057: The resource referred to by from-view-id, 'main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 10:40:19,064 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 10:40:19,066 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 10:40:19,066 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) JSF1058: The resource referred to by to-view-id, 'main.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 10:40:19,066 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 10:40:19,066 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 85) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 10:40:19,202 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 85) Running on PrimeFaces 12.0.0
-2025-05-09 10:40:19,214 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0021: Registered web context: '/web_3' for server 'default-server'
-2025-05-09 10:40:19,241 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "web_3.war" (runtime-name : "web_3.war")
-2025-05-09 10:40:19,261 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2025-05-09 10:40:19,263 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) started in 14242ms - Started 501 of 701 services (341 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
-2025-05-09 10:40:19,264 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://0.0.0.0:27891/management
-2025-05-09 10:40:19,264 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://0.0.0.0:27891
-2025-05-09 10:40:35,755 INFO  [stdout] (default task-1) [EL Fine]: moxy: 2025-05-09 10:40:35.755--Thread(Thread[#243,default task-1,5,main])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@2b2d4bda
-2025-05-09 10:40:35,759 INFO  [stdout] (default task-1) [EL Fine]: sql: 2025-05-09 10:40:35.758--ServerSession(565181847)--Connection(1843522089)--Thread(Thread[#243,default task-1,5,main])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 10:40:35,766 INFO  [stdout] (default task-1) [EL Fine]: sql: 2025-05-09 10:40:35.766--ServerSession(565181847)--Connection(1843522089)--Thread(Thread[#243,default task-1,5,main])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 10:41:30,276 ERROR [stderr] (Attach Listener) WARNING: A Java agent has been loaded dynamically (/home/ru6ik/Downloads/visualvm_22/visualvm/lib/jfluid-server-15.jar)
-2025-05-09 10:41:30,278 ERROR [stderr] (Attach Listener) WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-2025-05-09 10:41:30,279 ERROR [stderr] (Attach Listener) WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-2025-05-09 10:41:30,279 ERROR [stderr] (Attach Listener) WARNING: Dynamic loading of agents will be disallowed by default in a future release
-2025-05-09 10:41:30,302 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Waiting for connection on port 5140 (Protocol version: 21)
-2025-05-09 10:41:30,551 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Established connection with the tool
-2025-05-09 10:41:30,860 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Local accelerated session
-2025-05-09 11:06:40,782 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.2.Final
-2025-05-09 11:06:41,132 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
-2025-05-09 11:06:41,138 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
-2025-05-09 11:06:41,219 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) starting
-2025-05-09 11:06:41,220 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
-	[Standalone] = 
-	com.sun.management.jmxremote = true
-	com.sun.management.jmxremote.authenticate = false
-	com.sun.management.jmxremote.port = 27891
-	com.sun.management.jmxremote.rmi.port = 27891
-	com.sun.management.jmxremote.ssl = false
-	file.encoding = UTF-8
-	file.separator = /
-	java.awt.headless = true
-	java.class.path = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/jboss-modules.jar
-	java.class.version = 65.0
-	java.home = /usr/lib/jvm/java-21-openjdk
-	java.io.tmpdir = /tmp
-	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
-	java.net.preferIPv4Stack = true
-	java.rmi.server.hostname = localhost
-	java.runtime.name = OpenJDK Runtime Environment
-	java.runtime.version = 21.0.6+7
-	java.security.manager = allow
-	java.specification.name = Java Platform API Specification
-	java.specification.vendor = Oracle Corporation
-	java.specification.version = 21
-	java.util.logging.manager = org.jboss.logmanager.LogManager
-	java.vendor = Red Hat, Inc.
-	java.vendor.url = https://www.redhat.com/
-	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=java-21-openjdk&version=40
-	java.vendor.version = (Red_Hat-21.0.6.0.7-1)
-	java.version = 21.0.6
-	java.version.date = 2025-01-21
-	java.vm.compressedOopsMode = 32-bit
-	java.vm.info = mixed mode, sharing
-	java.vm.name = OpenJDK 64-Bit Server VM
-	java.vm.specification.name = Java Virtual Machine Specification
-	java.vm.specification.vendor = Oracle Corporation
-	java.vm.specification.version = 21
-	java.vm.vendor = Red Hat, Inc.
-	java.vm.version = 21.0.6+7
-	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
-	jboss.bind.address = 0.0.0.0
-	jboss.bind.address.management = 0.0.0.0
-	jboss.home.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly
-	jboss.host.name = fedora
-	jboss.modules.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules
-	jboss.modules.system.pkgs = org.jboss.byteman
-	jboss.node.name = fedora
-	jboss.qualified.host.name = fedora
-	jboss.server.base.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone
-	jboss.server.config.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration
-	jboss.server.data.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data
-	jboss.server.deploy.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content
-	jboss.server.log.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log
-	jboss.server.name = fedora
-	jboss.server.persist.config = true
-	jboss.server.temp.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/tmp
-	jdk.debug = release
-	line.separator = 
-
-	logging.configuration = file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties
-	module.path = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules
-	native.encoding = UTF-8
-	org.jboss.boot.log.file = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log
-	org.jboss.resolver.warning = true
-	os.arch = amd64
-	os.name = Linux
-	os.version = 6.13.10-200.fc41.x86_64
-	path.separator = :
-	stderr.encoding = UTF-8
-	stdout.encoding = UTF-8
-	sun.arch.data.model = 64
-	sun.boot.library.path = /usr/lib/jvm/java-21-openjdk/lib
-	sun.cpu.endian = little
-	sun.io.unicode.encoding = UnicodeLittle
-	sun.java.command = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/jboss-modules.jar -mp /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly -Djboss.server.base.dir=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone -b 0.0.0.0 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.port=27891 -Dcom.sun.management.jmxremote.rmi.port=27891 -Djava.rmi.server.hostname=localhost -Djboss.bind.address.management=0.0.0.0 -Djboss.bind.address=0.0.0.0
-	sun.java.launcher = SUN_STANDARD
-	sun.jnu.encoding = UTF-8
-	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
-	user.country = US
-	user.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly
-	user.home = /home/ru6ik
-	user.language = en
-	user.name = ru6ik
-	user.timezone = Europe/Moscow
-2025-05-09 11:06:41,222 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties 
-2025-05-09 11:06:41,570 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.19.1.Final
-2025-05-09 11:06:42,208 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 20) WFLYDR0001: Content added at location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/dd/f78740f0aecb5d96899eba1f633ba4c2a92c65/content
-2025-05-09 11:06:45,789 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 20) WFLYDR0001: Content added at location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/fdeb1f1cc63fa6d9617bce57d40f3362afa61a/content
-2025-05-09 11:06:45,803 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2025-05-09 11:06:45,813 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.8.7.Final
-2025-05-09 11:06:45,818 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.8.7.Final
-2025-05-09 11:06:45,830 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
-2025-05-09 11:06:45,831 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
-2025-05-09 11:06:45,831 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
-2025-05-09 11:06:45,832 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.1.Final
-2025-05-09 11:06:45,834 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
-2025-05-09 11:06:45,834 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
-2025-05-09 11:06:45,835 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2025-05-09 11:06:45,836 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
-2025-05-09 11:06:45,839 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
-2025-05-09 11:06:45,840 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
-2025-05-09 11:06:45,840 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
-2025-05-09 11:06:45,841 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
-2025-05-09 11:06:45,841 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
-2025-05-09 11:06:45,847 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
-2025-05-09 11:06:45,858 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
-2025-05-09 11:06:45,860 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
-2025-05-09 11:06:45,866 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.2.19.Final starting
-2025-05-09 11:06:45,868 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2025-05-09 11:06:45,868 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
-2025-05-09 11:06:45,871 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.25.Final
-2025-05-09 11:06:45,878 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
-2025-05-09 11:06:45,879 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = postgresql
-2025-05-09 11:06:45,894 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore' does not exist. Used blank.
-2025-05-09 11:06:45,903 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
-2025-05-09 11:06:45,912 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2025-05-09 11:06:45,921 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
-2025-05-09 11:06:45,921 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
-2025-05-09 11:06:45,922 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
-2025-05-09 11:06:45,922 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) Queuing requests.
-2025-05-09 11:06:45,923 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
-2025-05-09 11:06:45,972 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:27488
-2025-05-09 11:06:45,998 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2025-05-09 11:06:46,001 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:27890
-2025-05-09 11:06:46,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2025-05-09 11:06:46,124 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
-2025-05-09 11:06:46,125 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/deployments
-2025-05-09 11:06:46,130 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "HttpUnit.jar" (runtime-name: "HttpUnit.jar")
-2025-05-09 11:06:46,130 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "web_3.war" (runtime-name: "web_3.war")
-2025-05-09 11:06:46,175 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.5.0.Final (Apache CXF 3.4.10) 
-2025-05-09 11:06:46,640 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Triskaidekaphobia' 13.0.10.Final
-2025-05-09 11:06:46,695 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
-2025-05-09 11:06:46,919 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2025-05-09 11:06:46,920 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2025-05-09 11:06:46,928 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
-2025-05-09 11:06:46,931 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
-2025-05-09 11:06:46,980 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for WebLab
-2025-05-09 11:06:47,027 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'web_3.war#WebLab'
-2025-05-09 11:06:47,118 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-05-09 11:06:47.11--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-2025-05-09 11:06:47,171 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 11:06:47.169--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,171 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 11:06:47,171 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 11:06:47.171--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,171 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 11:06:47,172 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.171--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class point.Point] is set to [FIELD].
-2025-05-09 11:06:47,179 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 11:06:47.179--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,179 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 11:06:47,179 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 11:06:47.179--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,179 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 11:06:47,180 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 11:06:47.18--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,180 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 11:06:47,180 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 11:06:47.18--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,180 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 11:06:47,180 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.18--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class point.Point] is being defaulted to: Point.
-2025-05-09 11:06:47,186 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.185--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
-2025-05-09 11:06:47,186 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.186--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
-2025-05-09 11:06:47,186 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.186--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
-2025-05-09 11:06:47,187 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.187--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [scriptTime] is being defaulted to: SCRIPTTIME.
-2025-05-09 11:06:47,187 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.187--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
-2025-05-09 11:06:47,187 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-09 11:06:47.187--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,187 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
-2025-05-09 11:06:47,188 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-09 11:06:47.187--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
-2025-05-09 11:06:47,188 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
-2025-05-09 11:06:47,188 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.188--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [time] is being defaulted to: TIME.
-2025-05-09 11:06:47,188 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-09 11:06:47.188--ServerSession(650689949)--Thread(Thread[#186,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [status] is being defaulted to: STATUS.
-2025-05-09 11:06:47,239 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment web_3.war
-2025-05-09 11:06:47,319 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 7.0.2.Final
-2025-05-09 11:06:47,466 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-1) No shutdown hook registered: Please call close() manually on application shutdown.
-2025-05-09 11:06:47,467 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-1) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=web_3.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@7ff8a62, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=fedora, jaeger.version=Java-1.6.0, ip=172.20.10.14}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
-2025-05-09 11:06:47,573 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
-2025-05-09 11:06:47,586 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 4.0.3 (Final)
-2025-05-09 11:06:47,617 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
-2025-05-09 11:06:47,727 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-1) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
-2025-05-09 11:06:48,074 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: moxy: 2025-05-09 11:06:48.074--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@33324d9f
-2025-05-09 11:06:48,126 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Warning]: transaction: 2025-05-09 11:06:48.126--ServerSession(650689949)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--PersistenceUnitInfo WebLab has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
-2025-05-09 11:06:48,127 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Info]: 2025-05-09 11:06:48.127--ServerSession(650689949)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--EclipseLink, version: Eclipse Persistence Services - 3.0.2.v202107160933
-2025-05-09 11:06:48,199 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: connection: 2025-05-09 11:06:48.199--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
-2025-05-09 11:06:48,203 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: connection: 2025-05-09 11:06:48.202--ServerSession(650689949)--Connection(1258600044)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--connecting(DatabaseLogin(
-2025-05-09 11:06:48,203 INFO  [stdout] (ServerService Thread Pool -- 92) 	platform=>PostgreSQLPlatform
-2025-05-09 11:06:48,203 INFO  [stdout] (ServerService Thread Pool -- 92) 	user name=> "postgres"
-2025-05-09 11:06:48,203 INFO  [stdout] (ServerService Thread Pool -- 92) 	datasource URL=> "jdbc:postgresql://localhost:5432/studs"
-2025-05-09 11:06:48,203 INFO  [stdout] (ServerService Thread Pool -- 92) ))
-2025-05-09 11:06:48,212 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Config]: connection: 2025-05-09 11:06:48.212--ServerSession(650689949)--Connection(1621026991)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--Connected: jdbc:postgresql://localhost:5432/studs
-2025-05-09 11:06:48,212 INFO  [stdout] (ServerService Thread Pool -- 92) 	User: postgres
-2025-05-09 11:06:48,212 INFO  [stdout] (ServerService Thread Pool -- 92) 	Database: PostgreSQL  Version: 16.8
-2025-05-09 11:06:48,212 INFO  [stdout] (ServerService Thread Pool -- 92) 	Driver: PostgreSQL JDBC Driver  Version: 42.6.0
-2025-05-09 11:06:48,235 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: connection: 2025-05-09 11:06:48.234--ServerSession(650689949)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--/vfs:/content/web_3.war/WEB-INF/classes/_WebLab login successful
-2025-05-09 11:06:48,253 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: sql: 2025-05-09 11:06:48.253--ServerSession(650689949)--Connection(1621026991)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
-2025-05-09 11:06:48,316 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: sql: 2025-05-09 11:06:48.316--ServerSession(650689949)--Connection(1621026991)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 11:06:48,327 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: moxy: 2025-05-09 11:06:48.326--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@6530ca6f
-2025-05-09 11:06:48,328 INFO  [stdout] (ServerService Thread Pool -- 92) [EL Fine]: sql: 2025-05-09 11:06:48.328--ServerSession(650689949)--Connection(1621026991)--Thread(Thread[#237,ServerService Thread Pool -- 92,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
-2025-05-09 11:06:48,333 INFO  [stdout] (ServerService Thread Pool -- 92) CountMBean.logSimpleAgentStarted
-2025-05-09 11:06:48,333 INFO  [stdout] (ServerService Thread Pool -- 92) AverageClickInterval.logSimpleAgentStarted
-2025-05-09 11:06:48,359 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) Initializing Mojarra 3.0.0.SP04 for context '/web_3'
-2025-05-09 11:06:48,660 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) JSF1057: The resource referred to by from-view-id, 'main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 11:06:48,661 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 11:06:48,662 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 11:06:48,662 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) JSF1058: The resource referred to by to-view-id, 'main.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 11:06:48,662 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
-2025-05-09 11:06:48,662 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 92) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
-2025-05-09 11:06:48,803 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 92) Running on PrimeFaces 12.0.0
-2025-05-09 11:06:48,826 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0021: Registered web context: '/web_3' for server 'default-server'
-2025-05-09 11:06:48,856 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "web_3.war" (runtime-name : "web_3.war")
-2025-05-09 11:06:48,857 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "HttpUnit.jar" (runtime-name : "HttpUnit.jar")
-2025-05-09 11:06:48,878 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2025-05-09 11:06:48,879 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) started in 8333ms - Started 551 of 752 services (344 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
-2025-05-09 11:06:48,880 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://0.0.0.0:27891/management
-2025-05-09 11:06:48,880 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://0.0.0.0:27891
-2025-05-09 11:08:09,578 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
-2025-05-09 11:08:09,581 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
-2025-05-09 11:08:09,584 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
-2025-05-09 11:08:09,597 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
-2025-05-09 11:08:09,604 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0022: Unregistered web context: '/web_3' from server 'default-server'
-2025-05-09 11:08:09,609 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
-2025-05-09 11:08:09,613 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
-2025-05-09 11:08:09,623 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
-2025-05-09 11:08:09,643 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 99) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
-2025-05-09 11:08:09,681 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment HttpUnit.jar (runtime-name: HttpUnit.jar) in 73ms
-2025-05-09 11:08:09,705 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 99) WFLYJPA0004: Stopping Persistence Unit Service 'web_3.war#WebLab'
-2025-05-09 11:08:09,706 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2025-05-09 11:08:09,707 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
-2025-05-09 11:08:09,709 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
-2025-05-09 11:08:09,709 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
-2025-05-09 11:08:09,709 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:27488
-2025-05-09 11:08:09,709 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:27890
-2025-05-09 11:08:09,711 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.2.19.Final stopping
-2025-05-09 11:08:09,724 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment web_3.war (runtime-name: web_3.war) in 127ms
-2025-05-09 11:08:09,729 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) stopped in 130ms
+2025-05-15 14:26:56,982 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties 
+2025-05-15 14:26:57,301 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.19.1.Final
+2025-05-15 14:27:01,334 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 21) WFLYDR0001: Content added at location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/dc/c2a773324fbda5d944f868a1b84fa72c565625/content
+2025-05-15 14:27:01,360 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-05-15 14:27:01,370 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.7.Final
+2025-05-15 14:27:01,374 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.7.Final
+2025-05-15 14:27:01,383 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-05-15 14:27:01,384 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-05-15 14:27:01,384 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.1.Final
+2025-05-15 14:27:01,385 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-05-15 14:27:01,389 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-05-15 14:27:01,390 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-05-15 14:27:01,390 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-05-15 14:27:01,390 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2025-05-15 14:27:01,391 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2025-05-15 14:27:01,393 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
+2025-05-15 14:27:01,395 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-05-15 14:27:01,397 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-05-15 14:27:01,397 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-05-15 14:27:01,400 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2025-05-15 14:27:01,410 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-05-15 14:27:01,410 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2025-05-15 14:27:01,410 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2025-05-15 14:27:01,412 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-05-15 14:27:01,418 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.2.19.Final starting
+2025-05-15 14:27:01,421 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2025-05-15 14:27:01,422 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.25.Final
+2025-05-15 14:27:01,423 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2025-05-15 14:27:01,428 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY00023: KeyStore file '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-05-15 14:27:01,435 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY01084: KeyStore /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2025-05-15 14:27:01,452 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-05-15 14:27:01,456 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2025-05-15 14:27:01,458 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) Queuing requests.
+2025-05-15 14:27:01,459 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
+2025-05-15 14:27:01,459 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
+2025-05-15 14:27:01,459 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2025-05-15 14:27:01,491 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:27488
+2025-05-15 14:27:01,511 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-05-15 14:27:01,519 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:27890
+2025-05-15 14:27:01,537 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-05-15 14:27:01,628 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2025-05-15 14:27:01,630 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/deployments
+2025-05-15 14:27:01,634 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "web_3.war" (runtime-name: "web_3.war")
+2025-05-15 14:27:01,686 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.5.0.Final (Apache CXF 3.4.10) 
+2025-05-15 14:27:02,543 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for WebLab
+2025-05-15 14:27:02,623 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'web_3.war#WebLab'
+2025-05-15 14:27:02,704 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-05-15 14:27:02.697--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-05-15 14:27:02,758 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-15 14:27:02.756--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,758 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-15 14:27:02,758 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-15 14:27:02.758--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,758 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-15 14:27:02,759 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.759--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class point.Point] is set to [FIELD].
+2025-05-15 14:27:02,766 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-15 14:27:02.766--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,766 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-15 14:27:02,766 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-15 14:27:02.766--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,766 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-15 14:27:02,767 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-15 14:27:02.767--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,767 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-15 14:27:02,767 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-15 14:27:02.767--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,767 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-15 14:27:02,767 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.767--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class point.Point] is being defaulted to: Point.
+2025-05-15 14:27:02,773 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.773--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-05-15 14:27:02,773 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.773--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-05-15 14:27:02,774 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.774--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-05-15 14:27:02,774 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.774--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [scriptTime] is being defaulted to: SCRIPTTIME.
+2025-05-15 14:27:02,774 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.774--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-05-15 14:27:02,774 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-15 14:27:02.774--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,774 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-15 14:27:02,774 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-15 14:27:02.774--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-15 14:27:02,774 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-15 14:27:02,775 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.775--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [time] is being defaulted to: TIME.
+2025-05-15 14:27:02,775 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-15 14:27:02.775--ServerSession(867356664)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [status] is being defaulted to: STATUS.
+2025-05-15 14:27:02,816 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment web_3.war
+2025-05-15 14:27:02,879 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 7.0.2.Final
+2025-05-15 14:27:03,053 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-1) No shutdown hook registered: Please call close() manually on application shutdown.
+2025-05-15 14:27:03,054 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-1) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=web_3.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@43e38af4, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=fedora, jaeger.version=Java-1.6.0, ip=192.168.0.195}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2025-05-15 14:27:03,158 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2025-05-15 14:27:03,169 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 4.0.3 (Final)
+2025-05-15 14:27:03,179 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Triskaidekaphobia' 13.0.10.Final
+2025-05-15 14:27:03,205 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
+2025-05-15 14:27:03,223 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2025-05-15 14:27:03,315 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2025-05-15 14:27:03,403 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-05-15 14:27:03,404 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-05-15 14:27:03,409 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2025-05-15 14:27:03,411 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2025-05-15 14:27:03,640 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: moxy: 2025-05-15 14:27:03.64--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@677e17f8
+2025-05-15 14:27:03,687 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Warning]: transaction: 2025-05-15 14:27:03.687--ServerSession(867356664)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--PersistenceUnitInfo WebLab has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
+2025-05-15 14:27:03,688 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Info]: 2025-05-15 14:27:03.688--ServerSession(867356664)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--EclipseLink, version: Eclipse Persistence Services - 3.0.2.v202107160933
+2025-05-15 14:27:03,756 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: connection: 2025-05-15 14:27:03.756--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+2025-05-15 14:27:03,760 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: connection: 2025-05-15 14:27:03.759--ServerSession(867356664)--Connection(1974088666)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--connecting(DatabaseLogin(
+2025-05-15 14:27:03,760 INFO  [stdout] (ServerService Thread Pool -- 87) 	platform=>PostgreSQLPlatform
+2025-05-15 14:27:03,760 INFO  [stdout] (ServerService Thread Pool -- 87) 	user name=> "postgres"
+2025-05-15 14:27:03,760 INFO  [stdout] (ServerService Thread Pool -- 87) 	datasource URL=> "jdbc:postgresql://localhost:5432/studs"
+2025-05-15 14:27:03,760 INFO  [stdout] (ServerService Thread Pool -- 87) ))
+2025-05-15 14:27:03,771 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Config]: connection: 2025-05-15 14:27:03.771--ServerSession(867356664)--Connection(170477204)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--Connected: jdbc:postgresql://localhost:5432/studs
+2025-05-15 14:27:03,771 INFO  [stdout] (ServerService Thread Pool -- 87) 	User: postgres
+2025-05-15 14:27:03,771 INFO  [stdout] (ServerService Thread Pool -- 87) 	Database: PostgreSQL  Version: 16.8
+2025-05-15 14:27:03,771 INFO  [stdout] (ServerService Thread Pool -- 87) 	Driver: PostgreSQL JDBC Driver  Version: 42.6.0
+2025-05-15 14:27:03,791 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: connection: 2025-05-15 14:27:03.791--ServerSession(867356664)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--/vfs:/content/web_3.war/WEB-INF/classes/_WebLab login successful
+2025-05-15 14:27:03,809 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: sql: 2025-05-15 14:27:03.809--ServerSession(867356664)--Connection(170477204)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+2025-05-15 14:27:03,880 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: sql: 2025-05-15 14:27:03.88--ServerSession(867356664)--Connection(170477204)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
+2025-05-15 14:27:03,889 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: moxy: 2025-05-15 14:27:03.889--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@3809f82a
+2025-05-15 14:27:03,891 INFO  [stdout] (ServerService Thread Pool -- 87) [EL Fine]: sql: 2025-05-15 14:27:03.891--ServerSession(867356664)--Connection(170477204)--Thread(Thread[#231,ServerService Thread Pool -- 87,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
+2025-05-15 14:27:03,895 INFO  [stdout] (ServerService Thread Pool -- 87) CountMBean.logSimpleAgentStarted
+2025-05-15 14:27:03,895 INFO  [stdout] (ServerService Thread Pool -- 87) AverageClickInterval.logSimpleAgentStarted
+2025-05-15 14:27:03,925 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) Initializing Mojarra 3.0.0.SP04 for context '/web_3'
+2025-05-15 14:27:04,233 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) JSF1057: The resource referred to by from-view-id, 'main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
+2025-05-15 14:27:04,233 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
+2025-05-15 14:27:04,234 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
+2025-05-15 14:27:04,235 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) JSF1058: The resource referred to by to-view-id, 'main.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
+2025-05-15 14:27:04,235 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
+2025-05-15 14:27:04,235 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 87) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
+2025-05-15 14:27:04,399 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 87) Running on PrimeFaces 12.0.0
+2025-05-15 14:27:04,413 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0021: Registered web context: '/web_3' for server 'default-server'
+2025-05-15 14:27:04,441 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "web_3.war" (runtime-name : "web_3.war")
+2025-05-15 14:27:04,461 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-05-15 14:27:04,463 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) started in 8194ms - Started 501 of 701 services (341 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2025-05-15 14:27:04,463 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://0.0.0.0:27891/management
+2025-05-15 14:27:04,464 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://0.0.0.0:27891
+2025-05-15 14:36:57,168 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/c1/068012123ebed73eaf2c11ec519b613b660c38 is obsolete and will be removed
+2025-05-15 14:36:57,171 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/c1/068012123ebed73eaf2c11ec519b613b660c38/content
+2025-05-15 14:36:57,172 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/af/7de163b14a673ee287b762ece426e5fb54ea2c is obsolete and will be removed
+2025-05-15 14:36:57,172 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/af/7de163b14a673ee287b762ece426e5fb54ea2c/content
+2025-05-15 14:36:57,172 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/baf1ab733967f00e4f0415ee3c835f108acbe7 is obsolete and will be removed
+2025-05-15 14:36:57,173 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/baf1ab733967f00e4f0415ee3c835f108acbe7/content
+2025-05-15 14:36:57,173 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/3a/55fd8c96bb9c970a72566803ccd3767ccc6c25 is obsolete and will be removed
+2025-05-15 14:36:57,173 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/3a/55fd8c96bb9c970a72566803ccd3767ccc6c25/content
+2025-05-15 14:36:57,173 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/d564784566d79c1f6daf0241c6519c3d073782 is obsolete and will be removed
+2025-05-15 14:36:57,173 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 88) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/d564784566d79c1f6daf0241c6519c3d073782/content
+2025-05-15 17:41:10,833 ERROR [stderr] (Attach Listener) WARNING: A Java agent has been loaded dynamically (/home/ru6ik/Downloads/visualvm_22/visualvm/lib/jfluid-server-15.jar)
+2025-05-15 17:41:10,837 ERROR [stderr] (Attach Listener) WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+2025-05-15 17:41:10,837 ERROR [stderr] (Attach Listener) WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+2025-05-15 17:41:10,837 ERROR [stderr] (Attach Listener) WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2025-05-15 17:41:10,848 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Waiting for connection on port 5140 (Protocol version: 21)
+2025-05-15 17:41:10,872 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Established connection with the tool
+2025-05-15 17:41:11,177 INFO  [stdout] (*** Profiler Agent Communication Thread) Profiler Agent: Local accelerated session

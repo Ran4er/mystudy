@@ -1,0 +1,243 @@
+2025-05-12 12:02:33,063 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.2.Final
+2025-05-12 12:02:33,469 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2025-05-12 12:02:33,474 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-05-12 12:02:33,549 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) starting
+2025-05-12 12:02:33,550 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	com.sun.management.jmxremote = true
+	com.sun.management.jmxremote.authenticate = false
+	com.sun.management.jmxremote.port = 27891
+	com.sun.management.jmxremote.rmi.port = 27891
+	com.sun.management.jmxremote.ssl = false
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/jboss-modules.jar
+	java.class.version = 65.0
+	java.home = /usr/lib/jvm/java-21-openjdk
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.rmi.server.hostname = localhost
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 21.0.7+6
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 21
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Red Hat, Inc.
+	java.vendor.url = https://www.redhat.com/
+	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=java-21-openjdk&version=40
+	java.vendor.version = (Red_Hat-21.0.7.0.6-1)
+	java.version = 21.0.7
+	java.version.date = 2025-04-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 21
+	java.vm.vendor = Red Hat, Inc.
+	java.vm.version = 21.0.7+6
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.bind.address.management = 0.0.0.0
+	jboss.home.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly
+	jboss.host.name = fedora
+	jboss.modules.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = fedora
+	jboss.qualified.host.name = fedora
+	jboss.server.base.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone
+	jboss.server.config.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log
+	jboss.server.name = fedora
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties
+	module.path = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 6.14.5-200.fc41.x86_64
+	path.separator = :
+	stderr.encoding = UTF-8
+	stdout.encoding = UTF-8
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-21-openjdk/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/jboss-modules.jar -mp /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly -Djboss.server.base.dir=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone -b 0.0.0.0 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.port=27891 -Dcom.sun.management.jmxremote.rmi.port=27891 -Djava.rmi.server.hostname=localhost -Djboss.bind.address.management=0.0.0.0 -Djboss.bind.address=0.0.0.0
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly
+	user.home = /home/ru6ik
+	user.language = en
+	user.name = ru6ik
+	user.timezone = Europe/Moscow
+2025-05-12 12:02:33,552 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/logging.properties 
+2025-05-12 12:02:33,917 INFO  [org.wildfly.security] (ServerService Thread Pool -- 9) ELY00001: WildFly Elytron version 1.19.1.Final
+2025-05-12 12:02:34,558 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 18) WFLYDR0001: Content added at location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/c1/068012123ebed73eaf2c11ec519b613b660c38/content
+2025-05-12 12:02:38,258 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 18) WFLYDR0001: Content added at location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/d564784566d79c1f6daf0241c6519c3d073782/content
+2025-05-12 12:02:38,271 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-05-12 12:02:38,281 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.8.7.Final
+2025-05-12 12:02:38,286 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.8.7.Final
+2025-05-12 12:02:38,297 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-05-12 12:02:38,299 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 6.0.1.Final
+2025-05-12 12:02:38,299 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-05-12 12:02:38,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-05-12 12:02:38,303 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-05-12 12:02:38,302 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
+2025-05-12 12:02:38,306 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-05-12 12:02:38,306 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2025-05-12 12:02:38,308 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-05-12 12:02:38,307 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2025-05-12 12:02:38,310 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-05-12 12:02:38,319 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2025-05-12 12:02:38,322 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-05-12 12:02:38,334 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2025-05-12 12:02:38,334 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-05-12 12:02:38,336 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-05-12 12:02:38,340 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2025-05-12 12:02:38,341 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-05-12 12:02:38,346 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.25.Final
+2025-05-12 12:02:38,350 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2025-05-12 12:02:38,354 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.2.19.Final starting
+2025-05-12 12:02:38,357 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2025-05-12 12:02:38,380 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-05-12 12:02:38,388 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2025-05-12 12:02:38,410 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-05-12 12:02:38,417 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
+2025-05-12 12:02:38,417 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
+2025-05-12 12:02:38,423 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2025-05-12 12:02:38,424 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) Queuing requests.
+2025-05-12 12:02:38,425 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2025-05-12 12:02:38,481 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:27488
+2025-05-12 12:02:38,512 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-05-12 12:02:38,520 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:27890
+2025-05-12 12:02:38,552 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-05-12 12:02:38,645 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Preview cumulative patch ID is: base, one-off patches include: none
+2025-05-12 12:02:38,647 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/deployments
+2025-05-12 12:02:38,652 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "web_3.war" (runtime-name: "web_3.war")
+2025-05-12 12:02:38,652 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "HttpUnit.jar" (runtime-name: "HttpUnit.jar")
+2025-05-12 12:02:38,701 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.5.0.Final (Apache CXF 3.4.10) 
+2025-05-12 12:02:39,207 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Triskaidekaphobia' 13.0.10.Final
+2025-05-12 12:02:39,269 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2025-05-12 12:02:39,503 INFO  [org.infinispan.CONFIG] (MSC service thread 1-5) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-05-12 12:02:39,504 INFO  [org.infinispan.CONFIG] (MSC service thread 1-5) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-05-12 12:02:39,511 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2025-05-12 12:02:39,514 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2025-05-12 12:02:39,590 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for WebLab
+2025-05-12 12:02:39,642 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'web_3.war#WebLab'
+2025-05-12 12:02:39,749 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-05-12 12:02:39.74--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-05-12 12:02:39,803 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-12 12:02:39.801--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,803 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-12 12:02:39,803 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-12 12:02:39.803--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,803 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-12 12:02:39,804 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.804--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class point.Point] is set to [FIELD].
+2025-05-12 12:02:39,811 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-12 12:02:39.811--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,811 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-12 12:02:39,811 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-12 12:02:39.811--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,812 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-12 12:02:39,812 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-12 12:02:39.812--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,812 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-12 12:02:39,812 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-12 12:02:39.812--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,812 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-12 12:02:39,813 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.812--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class point.Point] is being defaulted to: Point.
+2025-05-12 12:02:39,818 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.818--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-05-12 12:02:39,818 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.818--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-05-12 12:02:39,818 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.818--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-05-12 12:02:39,819 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.819--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [scriptTime] is being defaulted to: SCRIPTTIME.
+2025-05-12 12:02:39,819 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.819--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-05-12 12:02:39,819 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Warning]: metadata: 2025-05-12 12:02:39.819--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,819 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.IllegalArgumentException: Unsupported class file major version 65
+2025-05-12 12:02:39,819 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Severe]: metadata: 2025-05-12 12:02:39.819--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+2025-05-12 12:02:39,820 INFO  [stdout] (ServerService Thread Pool -- 78) java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+2025-05-12 12:02:39,820 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.82--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [time] is being defaulted to: TIME.
+2025-05-12 12:02:39,820 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-05-12 12:02:39.82--ServerSession(1499253138)--Thread(Thread[#185,ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [status] is being defaulted to: STATUS.
+2025-05-12 12:02:39,863 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment web_3.war
+2025-05-12 12:02:39,944 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 7.0.2.Final
+2025-05-12 12:02:40,093 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-5) No shutdown hook registered: Please call close() manually on application shutdown.
+2025-05-12 12:02:40,094 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-5) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=web_3.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@54fcbeff, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=fedora, jaeger.version=Java-1.6.0, ip=172.28.94.138}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2025-05-12 12:02:40,205 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.6)
+2025-05-12 12:02:40,217 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 4.0.3 (Final)
+2025-05-12 12:02:40,247 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
+2025-05-12 12:02:40,375 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-4) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2025-05-12 12:02:40,724 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: moxy: 2025-05-12 12:02:40.724--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@6fc9cafe
+2025-05-12 12:02:40,773 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Warning]: transaction: 2025-05-12 12:02:40.773--ServerSession(1499253138)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--PersistenceUnitInfo WebLab has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
+2025-05-12 12:02:40,774 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Info]: 2025-05-12 12:02:40.773--ServerSession(1499253138)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--EclipseLink, version: Eclipse Persistence Services - 3.0.2.v202107160933
+2025-05-12 12:02:40,845 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: connection: 2025-05-12 12:02:40.845--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+2025-05-12 12:02:40,848 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: connection: 2025-05-12 12:02:40.848--ServerSession(1499253138)--Connection(2028091267)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--connecting(DatabaseLogin(
+2025-05-12 12:02:40,848 INFO  [stdout] (ServerService Thread Pool -- 79) 	platform=>PostgreSQLPlatform
+2025-05-12 12:02:40,848 INFO  [stdout] (ServerService Thread Pool -- 79) 	user name=> "postgres"
+2025-05-12 12:02:40,848 INFO  [stdout] (ServerService Thread Pool -- 79) 	datasource URL=> "jdbc:postgresql://localhost:5432/studs"
+2025-05-12 12:02:40,848 INFO  [stdout] (ServerService Thread Pool -- 79) ))
+2025-05-12 12:02:40,857 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Config]: connection: 2025-05-12 12:02:40.857--ServerSession(1499253138)--Connection(256233378)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--Connected: jdbc:postgresql://localhost:5432/studs
+2025-05-12 12:02:40,858 INFO  [stdout] (ServerService Thread Pool -- 79) 	User: postgres
+2025-05-12 12:02:40,858 INFO  [stdout] (ServerService Thread Pool -- 79) 	Database: PostgreSQL  Version: 16.8
+2025-05-12 12:02:40,858 INFO  [stdout] (ServerService Thread Pool -- 79) 	Driver: PostgreSQL JDBC Driver  Version: 42.6.0
+2025-05-12 12:02:40,879 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: connection: 2025-05-12 12:02:40.879--ServerSession(1499253138)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--/vfs:/content/web_3.war/WEB-INF/classes/_WebLab login successful
+2025-05-12 12:02:40,901 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: sql: 2025-05-12 12:02:40.901--ServerSession(1499253138)--Connection(256233378)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+2025-05-12 12:02:40,968 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: sql: 2025-05-12 12:02:40.968--ServerSession(1499253138)--Connection(256233378)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
+2025-05-12 12:02:40,981 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: moxy: 2025-05-12 12:02:40.981--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@3f1573e5
+2025-05-12 12:02:40,982 INFO  [stdout] (ServerService Thread Pool -- 79) [EL Fine]: sql: 2025-05-12 12:02:40.982--ServerSession(1499253138)--Connection(256233378)--Thread(Thread[#223,ServerService Thread Pool -- 79,5,ServerService ThreadGroup])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
+2025-05-12 12:02:40,987 INFO  [stdout] (ServerService Thread Pool -- 79) CountMBean.logSimpleAgentStarted
+2025-05-12 12:02:40,987 INFO  [stdout] (ServerService Thread Pool -- 79) AverageClickInterval.logSimpleAgentStarted
+2025-05-12 12:02:41,011 INFO  [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) Initializing Mojarra 3.0.0.SP04 for context '/web_3'
+2025-05-12 12:02:41,391 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) JSF1057: The resource referred to by from-view-id, 'main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
+2025-05-12 12:02:41,391 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/main.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
+2025-05-12 12:02:41,393 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
+2025-05-12 12:02:41,393 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) JSF1058: The resource referred to by to-view-id, 'main.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
+2025-05-12 12:02:41,393 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) JSF1057: The resource referred to by from-view-id, 'index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected. 
+2025-05-12 12:02:41,393 WARNING [jakarta.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) JSF1058: The resource referred to by to-view-id, 'index.xhtml', for navigation from '/index.xhtml', does not start with '/'.  This will be added for you, but it should be corrected.
+2025-05-12 12:02:41,558 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 79) Running on PrimeFaces 12.0.0
+2025-05-12 12:02:41,570 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: '/web_3' for server 'default-server'
+2025-05-12 12:02:41,600 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "web_3.war" (runtime-name : "web_3.war")
+2025-05-12 12:02:41,601 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "HttpUnit.jar" (runtime-name : "HttpUnit.jar")
+2025-05-12 12:02:41,624 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-05-12 12:02:41,625 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) started in 8836ms - Started 551 of 752 services (344 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2025-05-12 12:02:41,626 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://0.0.0.0:27891/management
+2025-05-12 12:02:41,626 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://0.0.0.0:27891
+2025-05-12 12:05:18,156 INFO  [stdout] (default task-1) [EL Fine]: moxy: 2025-05-12 12:05:18.155--Thread(Thread[#257,default task-1,5,main])--SAXParserFactory instance: org.apache.xerces.jaxp.SAXParserFactoryImpl@49dde99
+2025-05-12 12:05:18,158 INFO  [stdout] (default task-1) [EL Fine]: sql: 2025-05-12 12:05:18.158--ServerSession(1499253138)--Connection(256233378)--Thread(Thread[#257,default task-1,5,main])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
+2025-05-12 12:05:18,162 INFO  [stdout] (default task-1) [EL Fine]: sql: 2025-05-12 12:05:18.162--ServerSession(1499253138)--Connection(256233378)--Thread(Thread[#257,default task-1,5,main])--SELECT ID, R, SCRIPTTIME, STATUS, TIME, X, Y FROM points
+2025-05-12 12:12:33,739 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/3e/e2f39fdadc9e74e87bb5dd8d19a79466fa3d60 is obsolete and will be removed
+2025-05-12 12:12:33,740 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/3e/e2f39fdadc9e74e87bb5dd8d19a79466fa3d60/content
+2025-05-12 12:12:33,740 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/dd/f78740f0aecb5d96899eba1f633ba4c2a92c65 is obsolete and will be removed
+2025-05-12 12:12:33,741 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/dd/f78740f0aecb5d96899eba1f633ba4c2a92c65/content
+2025-05-12 12:12:33,741 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/ce/d10949c49d880464397c9e2e18ed979d6d25f7 is obsolete and will be removed
+2025-05-12 12:12:33,741 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/ce/d10949c49d880464397c9e2e18ed979d6d25f7/content
+2025-05-12 12:12:33,741 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/fdeb1f1cc63fa6d9617bce57d40f3362afa61a is obsolete and will be removed
+2025-05-12 12:12:33,741 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/a1/fdeb1f1cc63fa6d9617bce57d40f3362afa61a/content
+2025-05-12 12:12:33,741 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/ee/2972bdb517151f40941239a56d8801d7770446 is obsolete and will be removed
+2025-05-12 12:12:33,742 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location /home/ru6ik/Desktop/mystudy/4 OPI/lab_4/wildfly/standalone/data/content/ee/2972bdb517151f40941239a56d8801d7770446/content
+2025-05-12 12:18:17,289 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-05-12 12:18:17,291 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-05-12 12:18:17,292 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-05-12 12:18:17,297 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = web_3.war_org.postgresql.Driver_42_6
+2025-05-12 12:18:17,301 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-05-12 12:18:17,302 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0022: Unregistered web context: '/web_3' from server 'default-server'
+2025-05-12 12:18:17,302 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-05-12 12:18:17,312 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2025-05-12 12:18:17,327 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 95) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2025-05-12 12:18:17,334 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment HttpUnit.jar (runtime-name: HttpUnit.jar) in 36ms
+2025-05-12 12:18:17,342 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 95) WFLYJPA0004: Stopping Persistence Unit Service 'web_3.war#WebLab'
+2025-05-12 12:18:17,343 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-05-12 12:18:17,343 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2025-05-12 12:18:17,344 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
+2025-05-12 12:18:17,343 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-05-12 12:18:17,344 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:27890
+2025-05-12 12:18:17,344 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:27488
+2025-05-12 12:18:17,345 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.2.19.Final stopping
+2025-05-12 12:18:17,354 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment web_3.war (runtime-name: web_3.war) in 57ms
+2025-05-12 12:18:17,357 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Preview 26.1.3.Final (WildFly Core 18.1.2.Final) stopped in 61ms
