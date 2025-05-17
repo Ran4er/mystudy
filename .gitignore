@@ -1,4 +1,18 @@
-.venv
-.idea
-.vscode
-__pycache__
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python dependencies
+**/site-packages/
+*.so
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+
+# Другие бинарные файлы
+*.dll
+*.exe
