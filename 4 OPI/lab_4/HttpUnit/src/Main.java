@@ -46,7 +46,7 @@ public class Main {
                 WebResponse response = sc.getResponse(request);
                 System.out.println("Count: " + number++ + response);
                 java.lang.Thread.sleep(200); // We can remove this line of code and the corresponding delay in the entire program to improve performance
-                //HttpUnitOptions.clearScriptErrorMessages();
+                HttpUnitOptions.clearScriptErrorMessages();
             }
         } catch (InterruptedException ex) {
             Logger.getLogger("global").log(Level.SEVERE, null, ex);

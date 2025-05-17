@@ -27,7 +27,10 @@ public class Count implements NotificationBroadcaster, CountMBean, Serializable 
     @Override
     public long getNumberOfAllPoints() {
         List<Point> points = pointsBDManager.getAllPoints();
-        long count = points.size();
+        long count = 0;
+        for (Point point : points) {
+            if (point.getX() < 0) count++;
+        }
         if (count % 5 == 0 && count != 0) {
             broadcaster.sendNotification(new Notification(
                     "Points multiple of 5", this.getClass().getName(), sequenceNumber++,
