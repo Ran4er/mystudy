@@ -1,6 +1,6 @@
 import mpmath
 
-mpmath.mp.dps = 20
+mpmath.mp.dps = 15
 
 FUNCTIONS = {
     1: {

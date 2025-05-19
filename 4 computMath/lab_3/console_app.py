@@ -1,7 +1,7 @@
 from methods.integration import METHODS
 from methods.improper import check_singularities
 from utils.functions import FUNCTIONS
-from utils.fucntions import analytical_solution
+from utils.functions import analytical_solution
 from utils.runge import compute_integral
 import mpmath
 
@@ -11,9 +11,9 @@ def get_user_input():
         print(f"{num}: {func['desc']}")
     
     func_choice = int(input("Выберите номер функции: "))
-    a = mpmath.mpf(input("Введите нижний предел a: "))
-    b = mpmath.mpf(input("Введите верхний предел b: "))
-    epsilon = mpmath.mpf(input("Введите точность ε: "))
+    a = mpmath.mpf(input("Введите нижний предел a: ").replace(',', '.'))
+    b = mpmath.mpf(input("Введите верхний предел b: ").replace(',', '.'))
+    epsilon = mpmath.mpf(input("Введите точность ε: ").replace(',', '.'))
     
     print("\nДоступные методы:")
     for num, method in METHODS.items():
@@ -30,7 +30,9 @@ def get_user_input():
 
 def handle_singularity(loc, sing, a, b):
     point = sing['point']
-    if loc == 'inside':
+    lower = min(float(a), float(b))
+    upper = max(float(a), float(b))
+    if loc == 'inside' and not (lower < float(point) < upper):
         print(f"\nОшибка: Интеграл не существует, так как функция имеет разрыв в точке x = {mpmath.nstr(point, 6)} внутри интервала [{mpmath.nstr(a, 3)}, {mpmath.nstr(b, 3)}]")
         return True
     return False
